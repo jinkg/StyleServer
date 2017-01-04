@@ -43,6 +43,8 @@ public class Style {
 
         dataMap.put(DATA_KEY_WALLPAPER, items);
 
+        System.out.println("Select wallpaper : " + itemArray[index].imageUri);
+
         return new Gson().toJson(dataMap);
     }
 }
