@@ -1,7 +1,6 @@
 
 import com.google.gson.Gson;
 import model.WallpaperItem;
-import spark.Spark;
 
 import java.util.*;
 
@@ -18,25 +17,29 @@ public class Style {
         staticFileLocation("/public");
         port(6060);
         get("/style", (request, response) -> getStyle());
-
     }
 
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
 
     private static String getStyle() {
+        WallpaperItem[] itemArray = new WallpaperItem[]{
+                new WallpaperItem(UUID.randomUUID().toString(),
+                        "http://172.16.3.189:6060/20170102.jpg",
+                        "风景", "Theo van Rysselberghe, 1892", "wikiart.org"),
+                new WallpaperItem(UUID.randomUUID().toString(),
+                        "http://172.16.3.189:6060/20170103.jpg",
+                        "风景", "Theo van Rysselberghe, 1892", "wikiart.org"),
+                new WallpaperItem(UUID.randomUUID().toString(),
+                        "http://172.16.3.189:6060/20170104.jpg",
+                        "风景", "Theo van Rysselberghe, 1892", "wikiart.org")
+        };
+
         Map<String, Object> dataMap = new HashMap<>();
 
         List<WallpaperItem> items = new ArrayList<>();
 
-        items.add(new WallpaperItem(UUID.randomUUID().toString(),
-                "http://172.16.3.189:6060/20170102.jpg",
-                "风景", "Theo van Rysselberghe, 1892", "wikiart.org"));
-//        items.add(new WallpaperItem(UUID.randomUUID().toString(),
-//                "http://wallpapersqq.net/wp-content/uploads/2015/12/Gintoki-Sakata-abstract.jpg",
-//                "死神", "Yalin", "attribution"));
-//        items.add(new WallpaperItem(UUID.randomUUID().toString(),
-//                "http://labs3.kentooz.com/simplex/wp-content/uploads/2013/04/windows-vista-wallpaper-182.jpg",
-//                "蓝色", "Yalin", "attribution"));
+        int index = new Random().nextInt(itemArray.length);
+        items.add(itemArray[index]);
 
         dataMap.put(DATA_KEY_WALLPAPER, items);
 
