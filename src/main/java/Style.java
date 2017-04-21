@@ -19,19 +19,24 @@ public class Style {
         get("/style", (request, response) -> getStyle());
     }
 
+    private static final String IP = "http://www.kinglloy.com:6060";
+
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
 
     private static String getStyle() {
         WallpaperItem[] itemArray = new WallpaperItem[]{
                 new WallpaperItem(UUID.randomUUID().toString(),
-                        "http://172.16.3.189:6060/20170102.jpg",
-                        "风景", "Theo van Rysselberghe, 1892", "wikiart.org"),
+                        IP + "/series-i-no-3.jpg",
+                        "Series I, No. 3", "Georgia O'Keeffe, 1918", "kinglloy.com"),
                 new WallpaperItem(UUID.randomUUID().toString(),
-                        "http://172.16.3.189:6060/20170103.jpg",
-                        "风景", "Theo van Rysselberghe, 1892", "wikiart.org"),
+                        IP + "/blue-02.jpg",
+                        "Blue-02", "Georgia O'Keeffe, 1916", "kinglloy.com"),
                 new WallpaperItem(UUID.randomUUID().toString(),
-                        "http://172.16.3.189:6060/20170104.jpg",
-                        "风景", "Theo van Rysselberghe, 1892", "wikiart.org")
+                        IP + "/blue-morning-glories.jpg",
+                        "Blue Morning Glories", "Georgia O'Keeffe, 1935", "kinglloy.com"),
+                new WallpaperItem(UUID.randomUUID().toString(),
+                        IP + "/bleeding-heart.jpg",
+                        "Bleeding Heart", "Georgia O'Keeffe, 1932", "kinglloy.com")
         };
 
         Map<String, Object> dataMap = new HashMap<>();
@@ -40,6 +45,9 @@ public class Style {
 
         int index = new Random().nextInt(itemArray.length);
         items.add(itemArray[index]);
+//        items.add(itemArray[0]);
+//        items.add(itemArray[1]);
+//        items.add(itemArray[2]);
 
         dataMap.put(DATA_KEY_WALLPAPER, items);
 
