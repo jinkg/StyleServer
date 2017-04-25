@@ -30,6 +30,6 @@ public class WallpaperItem {
 
     @Override
     public String toString() {
-        return wallpaperId + " " + checksum;
+        return fileName + " " + checksum;
     }
 }
