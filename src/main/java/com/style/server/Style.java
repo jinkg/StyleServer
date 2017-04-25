@@ -2,26 +2,31 @@ package com.style.server;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.style.server.entity.HttpRequestBody;
+import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
 
-import java.io.File;
 import java.util.*;
 
-import static spark.Spark.get;
-import static spark.Spark.port;
-import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
 
 /**
  * 34921
  * 2017/1/3.
  */
 public class Style {
+    private static final String TAG = "Style";
+
     private static Gson gson = new GsonBuilder().create();
 
     public static void main(String[] args) {
         staticFileLocation("/public");
         port(6060);
-        get("/style", (request, response) -> getStyle());
+        post("/style", (request, response) -> {
+            HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+            LogUtil.D(TAG, httpRequestBody.toString());
+            return getStyle();
+        });
     }
 
     public static final String IP = "http://www.kinglloy.com:6060";
@@ -44,8 +49,6 @@ public class Style {
                         "Bleeding Heart", "Georgia O'Keeffe, 1932", "kinglloy.com")
         };
 
-        File file = new File("a.txt");
-
         Map<String, Object> dataMap = new HashMap<>();
 
         List<WallpaperItem> items = new ArrayList<>();
@@ -66,7 +69,7 @@ public class Style {
         }
         dataMap.put(DATA_KEY_WALLPAPER, items);
 
-        System.out.println("Select wallpapers : " + items);
+        LogUtil.D(TAG, items.toString());
 
         return gson.toJson(dataMap);
     }
