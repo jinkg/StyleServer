@@ -1,8 +1,8 @@
 package com.style.server.model;
 
-import com.style.server.Style;
-
 import java.io.File;
+
+import static com.style.server.Style.IP;
 
 /**
  * 34921
@@ -18,14 +18,15 @@ public class WallpaperItem {
     public String attribution;
     public String checksum;
 
-    public WallpaperItem(String wallpaperId, String fileName, String title, String byline, String attribution) {
+    public WallpaperItem(String wallpaperId, String fileName, String title,
+                         String byline, String attribution) {
         this.wallpaperId = wallpaperId;
         this.fileName = fileName;
         this.title = title;
         this.byline = byline;
         this.attribution = attribution;
 
-        this.imageUri = Style.IP + File.separator + fileName;
+        this.imageUri = IP + File.separator + fileName;
     }
 
     @Override

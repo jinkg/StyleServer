@@ -13,7 +13,7 @@ public class LogUtil {
         String procInfo = getProcessInfo();
 
         String time = getCurrentTime();
-        System.out.println(time + " " + procInfo + " " + tag + " \t" + msg + "\r\n");
+        System.out.println(time + " " + procInfo + " " + tag + " \t" + msg);
     }
 
     private static String getProcessInfo() {

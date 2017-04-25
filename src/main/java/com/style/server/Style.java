@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.style.server.entity.HttpRequestBody;
 import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
+import com.style.server.parser.WallpaperSourceParser;
 
 import java.util.*;
 
@@ -19,8 +20,10 @@ public class Style {
 
     private static Gson gson = new GsonBuilder().create();
 
+    private static final int MAX_WALLPAPER_RETURN = 3;
+
     public static void main(String[] args) {
-        staticFileLocation("/public");
+        staticFileLocation("/wallpapers");
         port(6060);
         post("/style", (request, response) -> {
             HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
@@ -34,42 +37,18 @@ public class Style {
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
 
     private static String getStyle() {
-        WallpaperItem[] itemArray = new WallpaperItem[]{
-                new WallpaperItem(UUID.randomUUID().toString(),
-                        "series-i-no-3.jpg",
-                        "Series I, No. 3", "Georgia O'Keeffe, 1918", "kinglloy.com"),
-                new WallpaperItem(UUID.randomUUID().toString(),
-                        "blue-02.jpg",
-                        "Blue-02", "Georgia O'Keeffe, 1916", "kinglloy.com"),
-                new WallpaperItem(UUID.randomUUID().toString(),
-                        "blue-morning-glories.jpg",
-                        "Blue Morning Glories", "Georgia O'Keeffe, 1935", "kinglloy.com"),
-                new WallpaperItem(UUID.randomUUID().toString(),
-                        "bleeding-heart.jpg",
-                        "Bleeding Heart", "Georgia O'Keeffe, 1932", "kinglloy.com")
-        };
-
         Map<String, Object> dataMap = new HashMap<>();
 
-        List<WallpaperItem> items = new ArrayList<>();
+        List<WallpaperItem> items = WallpaperSourceParser.parseToList();
 
-        for (int i = 0; i < 10; i++) {
-            int random = new Random().nextInt(itemArray.length);
-            for (int j = 0; j < 3; j++) {
-                int index = (random + j) % itemArray.length;
-                WallpaperItem item = itemArray[index];
-                item.checksum = ChecksumUtil.getChecksum("src/main/resources/public/" + item.fileName);
-                if (item.checksum != null && !item.checksum.equals("")) {
-                    items.add(item);
-                }
-            }
-            if (!items.isEmpty()) {
-                break;
-            }
-        }
+        long seed = System.nanoTime();
+        Collections.shuffle(items, new Random(seed));
+        items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
+
         dataMap.put(DATA_KEY_WALLPAPER, items);
 
         LogUtil.D(TAG, items.toString());
+        System.out.println("------------");
 
         return gson.toJson(dataMap);
     }

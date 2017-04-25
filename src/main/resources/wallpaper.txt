@@ -1,0 +1,5 @@
+file name                   | wallpaper name        | author & date             | tag
+series-i-no-3.jpg           | Series I, No. 3       | Georgia O'Keeffe, 1918    | kinglloy.com
+blue-02.jpg                 | Blue-02               | Georgia O'Keeffe, 1916    | kinglloy.com
+blue-morning-glories.jpg    | Blue Morning Glories  | Georgia O'Keeffe, 1935    | kinglloy.com
+bleeding-heart.jpg          | Bleeding Heart        | Georgia O'Keeffe, 1932    | kinglloy.com
