@@ -1,6 +1,5 @@
 package com.style.server.model;
 
-import com.google.gson.annotations.Expose;
 import com.style.server.Style;
 
 import java.io.File;
