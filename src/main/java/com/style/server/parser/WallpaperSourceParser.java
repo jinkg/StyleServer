@@ -1,6 +1,7 @@
 package com.style.server.parser;
 
 import com.style.server.ChecksumUtil;
+import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
 
 import java.io.*;
@@ -14,9 +15,9 @@ import java.util.UUID;
  * on 2017/4/25.
  */
 public class WallpaperSourceParser {
-    private static final String WALLPAPER_SOURCE_FILE = "src/main/resources/wallpaper.txt";
-    private static final String WALLPAPER_SOURCE_DIR = "src/main/resources/wallpapers/";
-    private static final String WALLPAPER_DEMO_DIR = "src/main/resources/wallpapers/demo/";
+    private static final String WALLPAPER_SOURCE_FILE = "./wallpaper.txt";
+    private static final String WALLPAPER_SOURCE_DIR = "./wallpapers/";
+    private static final String WALLPAPER_DEMO_DIR = "./wallpapers/demo/";
     private static final String FILED_SEPARATOR = "\\|";
     private static final int FILED_COUNT = 4;
 

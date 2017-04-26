@@ -7,6 +7,7 @@ import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
 import com.style.server.parser.WallpaperSourceParser;
 
+import java.io.File;
 import java.util.*;
 
 import static spark.Spark.*;
@@ -23,13 +24,17 @@ public class Style {
     private static final int MAX_WALLPAPER_RETURN = 3;
 
     public static void main(String[] args) {
-        staticFileLocation("/wallpapers");
+//        staticFileLocation("/wallpapers");
+        staticFiles.externalLocation("./wallpapers");
         port(6060);
         post("/style", (request, response) -> {
             HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
             LogUtil.D(TAG, httpRequestBody.toString());
             return getStyle();
         });
+        get("/dir", (request, response) ->
+                getStyle()
+        );
     }
 
     public static final String IP = "http://www.kinglloy.com:6060";
