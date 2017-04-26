@@ -1,7 +1,6 @@
 package com.style.server.parser;
 
 import com.style.server.ChecksumUtil;
-import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
 
 import java.io.*;
