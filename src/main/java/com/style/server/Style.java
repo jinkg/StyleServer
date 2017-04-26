@@ -25,7 +25,7 @@ public class Style {
 
     public static void main(String[] args) {
 //        staticFileLocation("/wallpapers");
-        staticFiles.externalLocation("./wallpapers");
+        staticFiles.externalLocation("wallpapers");
         port(6060);
         post("/style", (request, response) -> {
             HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
