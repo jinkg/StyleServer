@@ -7,7 +7,6 @@ import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
 import com.style.server.parser.WallpaperSourceParser;
 
-import java.io.File;
 import java.util.*;
 
 import static spark.Spark.*;
@@ -29,6 +28,9 @@ public class Style {
         port(6060);
         post("/style", (request, response) -> {
             HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+            if (!ensureFacetIdValid(httpRequestBody)) {
+                return "404";
+            }
             LogUtil.D(TAG, httpRequestBody.toString());
             return getStyle();
         });
@@ -56,5 +58,13 @@ public class Style {
         System.out.println("------------");
 
         return gson.toJson(dataMap);
+    }
+
+    private static boolean ensureFacetIdValid(HttpRequestBody requestBody) {
+        if (!requestBody.isValidBody()) {
+            LogUtil.D(TAG, "Invalid facetId : " + requestBody.getFacetId());
+            return false;
+        }
+        return true;
     }
 }
