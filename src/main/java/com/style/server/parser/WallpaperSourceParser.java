@@ -20,7 +20,7 @@ public class WallpaperSourceParser {
     private static final String FILED_SEPARATOR = "\\|";
     private static final int FILED_COUNT = 4;
 
-    private static final long CACHE_VALID_TIMEOUT = 5 * 60 * 1000;
+    private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
     private static final List<WallpaperItem> mCachedWallpaper = new ArrayList<>();
     private static long lastRefreshCacheTime;
