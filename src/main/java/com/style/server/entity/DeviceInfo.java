@@ -5,29 +5,38 @@ package com.style.server.entity;
  * on 2017/4/25.
  */
 public class DeviceInfo {
-    private int sdkVersion;
-    private String androidId;
-    private String manufacturer;
-    private String model;
-    private String type;
 
-    public int getSdkVersion() {
-        return sdkVersion;
-    }
+  private int sdkVersion;
+  private String androidId;
+  private String manufacturer;
+  private String model;
+  private String type;
 
-    public String getAndroidId() {
-        return androidId;
-    }
+  public int getSdkVersion() {
+    return sdkVersion;
+  }
 
-    public String getManufacturer() {
-        return manufacturer;
-    }
+  public String getAndroidId() {
+    return androidId;
+  }
 
-    public String getModel() {
-        return model;
-    }
+  public String getManufacturer() {
+    return manufacturer;
+  }
 
-    public String getType() {
-        return type;
-    }
+  public String getModel() {
+    return model;
+  }
+
+  public String getType() {
+    return type;
+  }
+
+  public void setAndroidId(String androidId) {
+    this.androidId = androidId;
+  }
+
+  public void setModel(String model) {
+    this.model = model;
+  }
 }

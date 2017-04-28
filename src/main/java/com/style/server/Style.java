@@ -2,6 +2,7 @@ package com.style.server;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.style.server.entity.DeviceInfo;
 import com.style.server.entity.HttpRequestBody;
 import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
@@ -16,40 +17,48 @@ import static spark.Spark.*;
  * 2017/1/3.
  */
 public class Style {
-    private static final String TAG = "Style";
 
-    private static Gson gson = new GsonBuilder().create();
+  private static final String TAG = "Style";
 
-    private static final int MAX_WALLPAPER_RETURN = 3;
+  private static Gson gson = new GsonBuilder().create();
 
-    public static void main(String[] args) {
-        staticFileLocation("/wallpapers");
-        port(6060);
-        post("/style", (request, response) -> {
-            HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
-            LogUtil.D(TAG, httpRequestBody.toString());
-            return getStyle();
-        });
-    }
+  private static final int MAX_WALLPAPER_RETURN = 3;
 
-    public static final String IP = "http://www.kinglloy.com:6060";
+  public static void main(String[] args) {
+    staticFileLocation("/wallpapers");
+    port(6060);
+    post("/style", (request, response) -> {
+      HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+      LogUtil.D(TAG, httpRequestBody.toString());
+      return getStyle();
+    });
+    get("/log", (request, response) -> {
+      DeviceInfo deviceInfo = new DeviceInfo();
+      deviceInfo.setAndroidId("androidID");
+      deviceInfo.setModel("model");
+      LogUtil.F(TAG, "aha", deviceInfo);
+      return "123";
+    });
+  }
 
-    private static final String DATA_KEY_WALLPAPER = "wallpapers";
+  public static final String IP = "http://www.kinglloy.com:6060";
 
-    private static String getStyle() {
-        Map<String, Object> dataMap = new HashMap<>();
+  private static final String DATA_KEY_WALLPAPER = "wallpapers";
 
-        List<WallpaperItem> items = WallpaperSourceParser.parseToList();
+  private static String getStyle() {
+    Map<String, Object> dataMap = new HashMap<>();
 
-        long seed = System.nanoTime();
-        Collections.shuffle(items, new Random(seed));
-        items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
+    List<WallpaperItem> items = WallpaperSourceParser.parseToList();
 
-        dataMap.put(DATA_KEY_WALLPAPER, items);
+    long seed = System.nanoTime();
+    Collections.shuffle(items, new Random(seed));
+    items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
 
-        LogUtil.D(TAG, items.toString());
-        System.out.println("------------");
+    dataMap.put(DATA_KEY_WALLPAPER, items);
 
-        return gson.toJson(dataMap);
-    }
+    LogUtil.D(TAG, items.toString());
+    System.out.println("------------");
+
+    return gson.toJson(dataMap);
+  }
 }
