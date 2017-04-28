@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class HttpRequestBody {
     public static final List<String> validFacetIdList = new ArrayList<>(
-            Arrays.asList("eY2qu+zyliX8ptVNGmVW81e+tzU=", "b"));
+            Arrays.asList("eY2qu+zyliX8ptVNGmVW81e+tzU=", "0C73mPNvXJ5tL99+xMM62U0Ii5I="));
 
     private DeviceInfo deviceInfo;
     private String facetId;
