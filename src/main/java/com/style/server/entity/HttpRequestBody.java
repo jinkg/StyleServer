@@ -1,11 +1,19 @@
 package com.style.server.entity;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * jinyalin
  * on 2017/4/25.
  */
 public class HttpRequestBody {
+    public static final List<String> validFacetIdList = new ArrayList<>(
+            Arrays.asList("eY2qu+zyliX8ptVNGmVW81e+tzU=", "b"));
+
     private DeviceInfo deviceInfo;
+    private String facetId;
 
     public HttpRequestBody(DeviceInfo deviceInfo) {
         this.deviceInfo = deviceInfo;
@@ -13,6 +21,14 @@ public class HttpRequestBody {
 
     public DeviceInfo getDeviceInfo() {
         return deviceInfo;
+    }
+
+    public String getFacetId() {
+        return facetId;
+    }
+
+    public boolean isValidBody() {
+        return facetId != null && validFacetIdList.contains(facetId.trim());
     }
 
     @Override

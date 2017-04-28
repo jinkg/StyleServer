@@ -14,13 +14,13 @@ import java.util.UUID;
  * on 2017/4/25.
  */
 public class WallpaperSourceParser {
-    private static final String WALLPAPER_SOURCE_FILE = "src/main/resources/wallpaper.txt";
-    private static final String WALLPAPER_SOURCE_DIR = "src/main/resources/wallpapers/";
-    private static final String WALLPAPER_DEMO_DIR = "src/main/resources/wallpapers/demo/";
+    private static final String WALLPAPER_SOURCE_FILE = "./wallpaper.txt";
+    private static final String WALLPAPER_SOURCE_DIR = "./wallpapers/";
+    private static final String WALLPAPER_DEMO_DIR = "./wallpapers/demo/";
     private static final String FILED_SEPARATOR = "\\|";
     private static final int FILED_COUNT = 4;
 
-    private static final long CACHE_VALID_TIMEOUT = 5 * 60 * 1000;
+    private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
     private static final List<WallpaperItem> mCachedWallpaper = new ArrayList<>();
     private static long lastRefreshCacheTime;
