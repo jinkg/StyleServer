@@ -14,8 +14,8 @@ import java.util.Locale;
  */
 public class LogUtil {
 
-  private static final String DEFAULT_FILE_NAME = "../logs/stat_log.txt";
-  private static final String LOG_DIR = "../logs";
+  private static final String DEFAULT_FILE_NAME = "logs/stat_log.txt";
+  private static final String LOG_DIR = "logs";
 
   public static void D(String tag, String msg) {
     String procInfo = getProcessInfo();
@@ -40,12 +40,10 @@ public class LogUtil {
     String dir = String.format(Locale.getDefault(), "%d-%02d-%02d",
         c.get(Calendar.YEAR), c.get(Calendar.MONTH) + 1, c.get(Calendar.DAY_OF_MONTH));
     File dirFile = new File(LOG_DIR + File.separator + dir);
-    if (dirFile.mkdirs()) {
-      String fileName = model + "_" + androidId;
-      return new File(dirFile, fileName);
-    } else {
-      return null;
-    }
+    //noinspection ResultOfMethodCallIgnored
+    dirFile.mkdirs();
+    String fileName = model + "_" + androidId;
+    return new File(dirFile, fileName);
   }
 
   private static synchronized void internalWriteLog(File file, String tag, String msg) {
@@ -62,6 +60,7 @@ public class LogUtil {
       bw.close();
     } catch (Exception e) {
       // ignore
+      e.printStackTrace();
     }
   }
 
