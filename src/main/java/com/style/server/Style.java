@@ -35,6 +35,7 @@ public class Style {
       LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo());
       return getStyle();
     });
+    get("/test", (request, response) -> getStyle());
   }
 
   public static final String IP = "http://www.kinglloy.com:6060";
