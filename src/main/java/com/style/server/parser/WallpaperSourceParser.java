@@ -40,7 +40,7 @@ public class WallpaperSourceParser {
         BufferedReader bufferedReader = null;
         try {
             FileInputStream is = new FileInputStream(file);
-            InputStreamReader isr = new InputStreamReader(is);
+            InputStreamReader isr = new InputStreamReader(is, "UTF-8");
             bufferedReader = new BufferedReader(isr);
             // comment line
             bufferedReader.readLine();
