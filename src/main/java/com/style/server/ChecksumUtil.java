@@ -29,7 +29,7 @@ public class ChecksumUtil {
 
                 }
                 byte[] digest = dis.getMessageDigest().digest();
-                return Base64.getUrlEncoder().encodeToString(digest);
+                return Base64.getUrlEncoder().encodeToString(digest).trim();
             } catch (Exception e) {
                 return null;
             }
