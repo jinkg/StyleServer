@@ -9,7 +9,7 @@ import java.util.List;
  * on 2017/4/25.
  */
 public class HttpRequestBody {
-    public static final List<String> validFacetIdList = new ArrayList<>(
+    public static final List<String> VALID_FACET_ID_LIST = new ArrayList<>(
             Arrays.asList("eY2qu+zyliX8ptVNGmVW81e+tzU=", "0C73mPNvXJ5tL99+xMM62U0Ii5I="));
 
     private DeviceInfo deviceInfo;
@@ -28,7 +28,7 @@ public class HttpRequestBody {
     }
 
     public boolean isValidBody() {
-        return facetId != null && validFacetIdList.contains(facetId.trim());
+        return facetId != null && VALID_FACET_ID_LIST.contains(facetId.trim());
     }
 
     @Override
@@ -37,6 +37,8 @@ public class HttpRequestBody {
                 + ", sdkVersion: " + deviceInfo.getSdkVersion()
                 + ", androidId: " + deviceInfo.getAndroidId()
                 + ", manufacturer: " + deviceInfo.getManufacturer()
-                + ", model: " + deviceInfo.getModel();
+                + ", model: " + deviceInfo.getModel()
+                + ", versionName: " + deviceInfo.getVersionName()
+                + ", versionCode: " + deviceInfo.getVersionCode();
     }
 }
