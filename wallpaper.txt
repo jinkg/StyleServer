@@ -1,5 +1,5 @@
 file name                               | wallpaper name                        | author & date                 | tag
-coconut-beach.jpg                       | Enso                                  | 福岛庆道    | kinglloy.com
+coconut-beach.jpg                       | Coconut Beach                         | John Miller    | kinglloy.com
 new-harmony-1936.jpg                    | New Harmony                           | Paul Klee, 1936               | kinglloy.com
 o2-43-44-ou-o-violino-1944.jpg          | O2-43-44 (Ou O Violino)               | Fernando Lanhas, 1944         | kinglloy.com
 the-berlin-potsdam-railway-1847.jpg     | The Berlin-Potsdam Railway            | Adolph Menzel, 1847           | kinglloy.com
