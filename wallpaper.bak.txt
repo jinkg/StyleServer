@@ -23,3 +23,12 @@ new-harmony-1936.jpg                    | New Harmony                           
 o2-43-44-ou-o-violino-1944.jpg          | O2-43-44 (Ou O Violino)               | Fernando Lanhas, 1944         | kinglloy.com
 the-berlin-potsdam-railway-1847.jpg     | The Berlin-Potsdam Railway            | Adolph Menzel, 1847           | kinglloy.com
 mares-and-foals.jpg                     | Mares And Foals In A River Landscape  | George Stubbs, 1763 - 1768    | kinglloy.com
+
+coconut-beach.jpg                       | Coconut Beach                         | John Miller         | kinglloy.com
+hudson-river-1918.jpg                   | Hudson River                          | Leon Dabo, 1918     | kinglloy.com
+resting-tiger.jpg                       | Resting Tiger                         | LeRoy Neiman        | kinglloy.com
+biarritz-beach.jpg                      | Biarritz Beach                        | Kimon Loghi         | kinglloy.com
+the-yellow-river-breaches-its-course.jpg| 黄河逆流                              | 馬遠                | kinglloy.com
+dancing-and-singing.jpg                 | 踏歌圖                                | 馬遠                | kinglloy.com
+
+at-the-edge-of-the-brook-1875.jpg       | At The Edge Of The Brook              | William-Adolphe Bouguereau, 1875  | kinglloy.com
