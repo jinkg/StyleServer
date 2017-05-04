@@ -32,3 +32,7 @@ the-yellow-river-breaches-its-course.jpg| 黄河逆流                          
 dancing-and-singing.jpg                 | 踏歌圖                                | 馬遠                | kinglloy.com
 
 at-the-edge-of-the-brook-1875.jpg       | At The Edge Of The Brook              | William-Adolphe Bouguereau, 1875  | kinglloy.com
+
+landscape-with-the-flight-1524.jpg      | Landscape With The Flight             | Joachim Patinir, 1515 - 1524  | kinglloy.com
+lotus-1977.jpg                          | 莲花                                  | 林凤鸣, 1977                  | kinglloy.com
+the-bohemian-1890.jpg                   | The Bohemian                          | William-Adolphe Bouguereau, 1890 | kinglloy.com
