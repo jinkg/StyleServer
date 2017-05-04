@@ -1,4 +1,4 @@
 file name                               | wallpaper name                        | author & date                 | tag
-o2-43-44-ou-o-violino-1944.jpg          | O2-43-44 (Ou O Violino)               | Fernando Lanhas, 1944         | kinglloy.com
-the-berlin-potsdam-railway-1847.jpg     | The Berlin-Potsdam Railway            | Adolph Menzel, 1847           | kinglloy.com
-mares-and-foals.jpg                     | Mares And Foals In A River Landscape  | George Stubbs, 1763 - 1768    | kinglloy.com
+landscape-with-the-flight-1524.jpg      | Landscape With The Flight             | Joachim Patinir, 1515 - 1524  | kinglloy.com
+lotus-1977.jpg                          | 莲花                                  | 林凤鸣, 1977                  | kinglloy.com
+the-bohemian-1890.jpg                   | The Bohemian                          | William-Adolphe Bouguereau, 1890 | kinglloy.com
