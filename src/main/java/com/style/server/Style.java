@@ -30,6 +30,7 @@ public class Style {
     post("/style", (request, response) -> {
       HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
       if (!ensureFacetIdValid(httpRequestBody)) {
+        LogUtil.F(TAG,"Invalid facetId..");
         return "404";
       }
       LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo());

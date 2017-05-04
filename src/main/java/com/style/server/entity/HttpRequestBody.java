@@ -40,6 +40,7 @@ public class HttpRequestBody {
                 + ", manufacturer: " + deviceInfo.getManufacturer()
                 + ", model: " + deviceInfo.getModel()
                 + ", versionName: " + deviceInfo.getVersionName()
-                + ", versionCode: " + deviceInfo.getVersionCode();
+                + ", versionCode: " + deviceInfo.getVersionCode()
+                + ", channel: " + deviceInfo.getChannel();
     }
 }

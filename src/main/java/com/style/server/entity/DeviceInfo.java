@@ -13,6 +13,7 @@ public class DeviceInfo {
     private String type;
     private String versionName;
     private int versionCode;
+    private String channel;
 
     public int getSdkVersion() {
         return sdkVersion;
@@ -48,5 +49,9 @@ public class DeviceInfo {
 
     public int getVersionCode() {
         return versionCode;
+    }
+
+    public String getChannel() {
+        return channel;
     }
 }
