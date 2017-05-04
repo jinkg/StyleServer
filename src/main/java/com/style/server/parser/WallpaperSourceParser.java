@@ -30,7 +30,7 @@ public class WallpaperSourceParser {
         return currentTime - lastRefreshCacheTime > CACHE_VALID_TIMEOUT;
     }
 
-    public static List<WallpaperItem> parseToList() {
+    public static synchronized List<WallpaperItem> parseToList() {
         if (!maybeInvalidCache()) {
             return mCachedWallpaper;
         }
