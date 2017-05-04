@@ -37,7 +37,7 @@ public class Style {
     });
   }
 
-  public static final String IP = "http://www.kinglloy.com:6060";
+  public static final String IP = "http://api.kinglloy.com:6060";
 
   private static final String DATA_KEY_WALLPAPER = "wallpapers";
 
