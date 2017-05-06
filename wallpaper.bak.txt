@@ -31,10 +31,22 @@ biarritz-beach.jpg                      | Biarritz Beach                        
 the-yellow-river-breaches-its-course.jpg| 黄河逆流                               | 馬遠                | kinglloy.com
 dancing-and-singing.jpg                 | 踏歌圖                                 | 馬遠                | kinglloy.com
 
-at-the-edge-of-the-brook-1875.jpg       | At The Edge Of The Brook              | William-Adolphe Bouguereau, 1875  | kinglloy.com
+landscape-with-the-flight-1524.jpg      | Landscape With The Flight             | Joachim Patinir, 1515 - 1524  | kinglloy.com
+lotus-1977.jpg                          | 莲花                                  | 林凤鸣, 1977                  | kinglloy.com
+the-bohemian-1890.jpg                   | The Bohemian                          | William-Adolphe Bouguereau, 1890 | kinglloy.com
 
 landscape-with-the-flight-1524.jpg      | Landscape With The Flight             | Joachim Patinir, 1515 - 1524  | kinglloy.com
 lotus-1977.jpg                          | 莲花                                  | 林凤鸣, 1977                  | kinglloy.com
 the-bohemian-1890.jpg                   | The Bohemian                          | William-Adolphe Bouguereau, 1890 | kinglloy.com
+
+at-the-edge-of-the-brook-1875.jpg       | At The Edge Of The Brook              | William-Adolphe Bouguereau, 1875  | kinglloy.com
+still-life-with-lobster-and-radishes.jpg| Still-Life With Lobster And Radishes  | Cagnaccio di San Pietro, 1938  | kinglloy.com
+frontispiece-the-tailor-mouse.jpg       | Frontispiece. The Tailor Mouse        | Beatrix Potter, 1902          | kinglloy.com
+
+whistlejacket.jpg                       | Whistlejacket                         | George Stubbs, 1762           | kinglloy.com
+male-and-female-trees.jpg               | Male And Female Trees                 | Marianne North, 1883          | kinglloy.com
+a-greenland-or-gyr-falcon.jpg           | A Greenland, Or Gyr Falcon            | Archibald Thorburn            | kinglloy.com
+le-metro-aerien.jpg                     | Le Metro Aerien                       | Jules Lefranc                 | kinglloy.com
+kinomastushima-1940.jpg                 | 紀の松島                              | 浅野竹二, 1940                | kinglloy.com
 
 years_of_history.jpg                   | 歲華紀勝圖                             | 吳彬, 明                  | kinglloy.com
