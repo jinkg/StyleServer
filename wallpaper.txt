@@ -1,4 +1,4 @@
 file name                               | wallpaper name                        | author & date                 | tag
-whistlejacket.jpg                       | Whistlejacket                         | George Stubbs, 1762           | kinglloy.com
-male-and-female-trees.jpg               | Male And Female Trees                 | Marianne North, 1883          | kinglloy.com
-a-greenland-or-gyr-falcon.jpg           | A Greenland, Or Gyr Falcon            | Archibald Thorburn            | kinglloy.com
+years_of_history.jpg                    | 歲華紀勝圖                             | 吳彬, 明                  | kinglloy.com
+le-metro-aerien.jpg                     | Le Metro Aerien                       | Jules Lefranc                 | kinglloy.com
+blue-morning-glories.jpg                | Blue Morning Glories                  | Georgia O'Keeffe, 1935    | kinglloy.com
