@@ -42,5 +42,11 @@ whistlejacket.jpg                       | Whistlejacket                         
 male-and-female-trees.jpg               | Male And Female Trees                 | Marianne North, 1883          | kinglloy.com
 a-greenland-or-gyr-falcon.jpg           | A Greenland, Or Gyr Falcon            | Archibald Thorburn            | kinglloy.com
 le-metro-aerien.jpg                     | Le Metro Aerien                       | Jules Lefranc                 | kinglloy.com
+years_of_history.jpg                    | 歲華紀勝圖                            | 吳彬, 明                  | kinglloy.com
+
+birds-admist-willow.jpg                 | Birds Admist Willow                   | 林风眠                      | kinglloy.com
+pistachio-trees.jpg                     | Pistachio Trees                       | Hoca Ali Riza               | kinglloy.com
+north-shore-lake-superior-1926.jpg      | North Shore, Lake Superior            | Lawren Harris, 1926         | kinglloy.com
+natural-bridge-1860.jpg                 | Natural Bridge                        | David Johnson, 1860         | kinglloy.com
+the-apothesis-of-penelope-boothby.jpg   | The Apothesis Of Penelope Boothby     | Henry Fuseli, 1794          | kinglloy.com
 kinomastushima-1940.jpg                 | 紀の松島                              | 浅野竹二, 1940                | kinglloy.com
-years_of_history.jpg                    | 歲華紀勝圖                             | 吳彬, 明                  | kinglloy.com
