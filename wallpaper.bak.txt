@@ -58,3 +58,6 @@ young-gypsy-1990.jpg                    | Young Gypsy                           
 spiral-theme-1941.jpg                   | Spiral Theme                          | Naum Gabo, 1941                | kinglloy.com
 kitten-with-butterfly-1944.jpg          | 小猫与蝴蝶                             | 徐悲鸿, 1944                | kinglloy.com
 concerto-di-primavera-2000.jpg          | Concerto Di Primavera                 | Lino Tagliapietra, 2000     | kinglloy.com
+
+steam-train-rounding-a-bend.jpg         | Steam Train Rounding A Bend          | Eric Ravilious | kinglloy.com
+blue-pine-1980.jpg                      | Blue Pine                            | Eyvind Earle, 1980 | kinglloy.com
