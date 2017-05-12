@@ -59,5 +59,7 @@ spiral-theme-1941.jpg                   | Spiral Theme                          
 kitten-with-butterfly-1944.jpg          | 小猫与蝴蝶                             | 徐悲鸿, 1944                | kinglloy.com
 concerto-di-primavera-2000.jpg          | Concerto Di Primavera                 | Lino Tagliapietra, 2000     | kinglloy.com
 
-steam-train-rounding-a-bend.jpg         | Steam Train Rounding A Bend          | Eric Ravilious | kinglloy.com
-blue-pine-1980.jpg                      | Blue Pine                            | Eyvind Earle, 1980 | kinglloy.com
+bird-in-space-1923.jpg                  | Bird In Space                        | Constantin Brancusi, 1923 | kinglloy.com
+the-beached-margin-1937.jpg             | The Beached Margin                   | Edward Wadsworth, 1937 | kinglloy.com
+eschantos-21.jpg                        | Eschantos 21                         | Clarence Holbrook Carter | kinglloy.com
+
