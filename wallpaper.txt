@@ -1,4 +1,4 @@
-file name                               | wallpaper name                       | author & date                 | tag
-qianxuan-5.jpg                          | 桃枝松鼠图                             | 钱选 | kinglloy.com
-steam-train-rounding-a-bend.jpg         | Steam Train Rounding A Bend          | Eric Ravilious | kinglloy.com
-blue-pine-1980.jpg                      | Blue Pine                            | Eyvind Earle, 1980 | kinglloy.com
+file name                                   | wallpaper name                         | author & date                 | tag
+qianxuan-5.jpg                              | 桃枝松鼠图                               | 钱选                          | kinglloy.com
+steam-train-rounding-a-bend.jpg             | Steam Train Rounding A Bend            | Eric Ravilious                | kinglloy.com
+blue-pine-1980.jpg                          | Blue Pine                              | Eyvind Earle, 1980            | kinglloy.com
