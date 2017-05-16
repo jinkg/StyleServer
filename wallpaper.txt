@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-sunrise-of-wonder-v.jpg                     | Sunrise Of Wonder V                    | John Miller                   | kinglloy.com
-untitled-agnes-1931.jpg                     | 无题                                    | Agnes Lawrence Pelton, 1931   | kinglloy.com
-even-song-1930.jpg                          | Even Song                              | Agnes Lawrence Pelton, 1930   | kinglloy.com
+spring-moon-1942.jpg                        | Spring Moon                            | Agnes Lawrence Pelton, 1942   | kinglloy.com
+birds-of-paradise-1940.jpg                  | 天堂鸟                                  | 齐白石, 1940                   | kinglloy.com
+protein-and-cherries-1944.jpg               | 樱桃松鼠画                               | 齐白石, 1944                   | kinglloy.com
