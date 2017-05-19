@@ -83,9 +83,9 @@ untitled-agnes-1931.jpg                     | 无题                            
 even-song-1930.jpg                          | Even Song                              | Agnes Lawrence Pelton, 1930   | kinglloy.com
 gross-und-klein-1993.jpg                        |Gross und Klein                                 |Markus Raetz, 1993                              |kinglloy.com
 
-two-birds-1943.jpg                              |两只鸟                                       |徐悲鸿, 1943                                |kinglloy.com
-untitled-1965.jpg                               |无题                                        |Eva Hesse, 1965                                 |kinglloy.com
-violet-ice-kama-sutra.jpg                       |Violet Ice (Kama Sutra)                         |Jeff Koons, 1991                                |kinglloy.com
+old-pine-tree-and-peacock-1761.jpg              |孔雀凤凰图                                          |伊藤若冲, 1761                               |kinglloy.com
+jakuchu_phoenix.jpg                             |孔雀凤凰图                                          |伊藤若冲, 1761                               |kinglloy.com
+
 acrobat.jpg                                     |Acrobat                                         |Jeff Koons                                      |kinglloy.com
 bmw-art-car-1.jpg                               |BMW Art Car                                     |Jeff Koons, 2010                                |kinglloy.com
 nostalgia-for-innosence.png                     |Nostalgia for Innosence                         |Erik Sigerud                                    |kinglloy.com
@@ -100,3 +100,5 @@ hodogaya-on-the-tokaido.jpg                     |东海道保土ケ谷          
 tiger-1755.jpg                                  |老虎                                              |伊藤若冲, 1755                               |kinglloy.com
 old-pine-tree-and-peacock-1761.jpg              |孔雀凤凰图                                          |伊藤若冲, 1761                               |kinglloy.com
 jakuchu_phoenix.jpg                             |孔雀凤凰图                                          |伊藤若冲, 1761                               |kinglloy.com
+chess-players-iii-1924.jpg                      |Chess Players III                               |Willi Baumeister, 1924                          |kinglloy.com
+mask-4-1936.jpg                                 |Mask 4                                          |Willi Baumeister, 1936                          |kinglloy.com
