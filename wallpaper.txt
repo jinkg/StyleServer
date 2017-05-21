@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-acrobat.jpg                                     |Acrobat                                         |Jeff Koons                                      |kinglloy.com
-big-beak-and-mirabilis.jpg                      |Grosbeak and mirabilis                          |葛饰北斋, 1834                        |kinglloy.com
-chess-players-iii-1924.jpg                      |Chess Players III                               |Willi Baumeister, 1924                          |kinglloy.com
+tiger-1755.jpg                                  |老虎                                              |伊藤若冲, 1755                               |kinglloy.com
+mask-4-1936.jpg                                 |Mask 4                                          |Willi Baumeister, 1936                          |kinglloy.com
+l-eveque-et-ses-brebis.jpg                      |L'évêque et ses brebis                          |Paul Morissette, 2015                           |kinglloy.com
