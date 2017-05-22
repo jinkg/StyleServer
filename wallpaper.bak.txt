@@ -98,9 +98,27 @@ acrobat.jpg                                     |Acrobat                        
 big-beak-and-mirabilis.jpg                      |Grosbeak and mirabilis                          |葛饰北斋, 1834                        |kinglloy.com
 chess-players-iii-1924.jpg                      |Chess Players III                               |Willi Baumeister, 1924                          |kinglloy.com
 
-nostalgia-for-innosence.png                     |Nostalgia for Innosence                         |Erik Sigerud                                    |kinglloy.com
-mona-lisa.jpg                                   |Mona Lisa                                       |Leonardo da Vinci, c.1504                       |kinglloy.com
-magnolia-and-erect-rock.jpg                     |玉堂柱石圖                                        | 陈洪绶                                         | kinglloy.com
+tiger-1755.jpg                                  |老虎                                              |伊藤若冲, 1755                               |kinglloy.com
+mask-4-1936.jpg                                 |Mask 4                                          |Willi Baumeister, 1936                          |kinglloy.com
+l-eveque-et-ses-brebis.jpg                      |L'évêque et ses brebis                          |Paul Morissette, 2015                           |kinglloy.com
+
 fuji-mountains-in-clear-weather.jpg             |富士山                                            |葛饰北斋, 1831                             |kinglloy.com
 hodogaya-on-the-tokaido.jpg                     |东海道保土ケ谷                                     |葛饰北斋                              |kinglloy.com
+2-orange-and-a-half.JPG                         |Orange and a Half                               |Svetlana Kanyo, 2015                            |kinglloy.com
+5-tender-drops.JPG                              |Tender Drops                                    |Svetlana Kanyo, 2015                            |kinglloy.com
+peixet.JPEG                                     |Peixet                                          |Teddy Cobeña, 2015                              |kinglloy.com
+nostalgia-for-innosence.png                     |Nostalgia for Innosence                         |Erik Sigerud                                    |kinglloy.com
+balchik-coast.jpg                               |Balchik Coast                                   |Medi Wechsler Dinu                              |kinglloy.com
+viewing-fish-at-flower-harbour-1977.jpg         |Viewing Fish at Flower Harbour                  |Wu Guanzhong, 1977                              |kinglloy.com
+cranes-1992.jpg                                 |鹤                                              |黄永玉, 1992                              |kinglloy.com
+in-mood-2005.jpg                                |In Mood                                         |黄永玉, 2005                              |kinglloy.com
+lotus-1.jpg                                     |莲花                                            |黄永玉                                    |kinglloy.com
+cat-and-mouse.jpg                               |猫和老鼠                                        |黄永玉                                    |kinglloy.com
+egret.jpg                                       |白鹭                                            |林风眠                                    |kinglloy.com
+1-07-2001-2001.jpg                              |1-07-2001                                       |赵无极, 2001                                |kinglloy.com
+rose-de-ouarzazate-1991.jpg                     |Rose de Ouarzazate                              |Olivier Debre, 1991                             |kinglloy.com
+couleur-lumi-re-1993-1.jpg                      |Couleur lumi猫re                                 |Rossi, 1993-Horacio Garcia                      |kinglloy.com
+making-music-2000.jpg                           |Making Music                                    |Helen Frankenthaler, 2000                       |kinglloy.com
+fencing-at-munich-olympics-1972.jpg             |Fencing at Munich Olympics                      |LeRoy Neiman, 1972                              |kinglloy.com
+les-grands-respirants.jpg                       |LES GRANDS RESPIRANTS                           |Jean Messagier                                  |kinglloy.com
 
