@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-series-i-no-3.jpg                       | Series I, No. 3                       | Georgia O'Keeffe, 1918    | kinglloy.com
-blue-02.jpg                             | Blue-02                               | Georgia O'Keeffe, 1916    | kinglloy.com
-bleeding-heart.jpg                      | Bleeding Heart                        | Georgia O'Keeffe, 1932    | kinglloy.com
+separation-in-the-evening-1922.jpg      | Separation in the Evening             | Paul Klee, 1922           | kinglloy.com
+a-storm-prospero.jpg                    | A Storm                               | Thomas Jones, 1778        | kinglloy.com
+the-bard-1774.jpg                       | The Bard                              | Thomas Jones, 1774        | kinglloy.com
