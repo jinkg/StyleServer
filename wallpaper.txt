@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-separation-in-the-evening-1922.jpg      | Separation in the Evening             | Paul Klee, 1922           | kinglloy.com
-a-storm-prospero.jpg                    | A Storm                               | Thomas Jones, 1778        | kinglloy.com
-the-bard-1774.jpg                       | The Bard                              | Thomas Jones, 1774        | kinglloy.com
+new-harmony-1936.jpg                    | New Harmony                           | Paul Klee, 1936               | kinglloy.com
+o2-43-44-ou-o-violino-1944.jpg          | O2-43-44 (Ou O Violino)               | Fernando Lanhas, 1944         | kinglloy.com
+the-berlin-potsdam-railway-1847.jpg     | The Berlin-Potsdam Railway            | Adolph Menzel, 1847           | kinglloy.com
