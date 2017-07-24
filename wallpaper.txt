@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-the-berlin-potsdam-railway-1847.jpg     | The Berlin-Potsdam Railway            | Adolph Menzel, 1847           | kinglloy.com
-mares-and-foals.jpg                     | Mares And Foals In A River Landscape  | George Stubbs, 1763 - 1768    | kinglloy.com
-coconut-beach.jpg                       | Coconut Beach                         | John Miller         | kinglloy.com
+hudson-river-1918.jpg                   | Hudson River                          | Leon Dabo, 1918     | kinglloy.com
+resting-tiger.jpg                       | Resting Tiger                         | LeRoy Neiman        | kinglloy.com
+biarritz-beach.jpg                      | Biarritz Beach                        | Kimon Loghi         | kinglloy.com
