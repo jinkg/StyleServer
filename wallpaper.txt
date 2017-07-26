@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-hudson-river-1918.jpg                   | Hudson River                          | Leon Dabo, 1918     | kinglloy.com
-resting-tiger.jpg                       | Resting Tiger                         | LeRoy Neiman        | kinglloy.com
-biarritz-beach.jpg                      | Biarritz Beach                        | Kimon Loghi         | kinglloy.com
+the-yellow-river-breaches-its-course.jpg| 黄河逆流                               | 馬遠                | kinglloy.com
+dancing-and-singing.jpg                 | 踏歌圖                                 | 馬遠                | kinglloy.com
+landscape-with-the-flight-1524.jpg      | Landscape With The Flight             | Joachim Patinir, 1515 - 1524  | kinglloy.com
