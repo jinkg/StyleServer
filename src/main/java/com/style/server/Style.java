@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.style.server.entity.HttpRequestBody;
 import com.style.server.log.LogUtil;
 import com.style.server.model.WallpaperItem;
+import com.style.server.parser.AdvanceWallpaperParser;
 import com.style.server.parser.WallpaperSourceParser;
 
 import java.util.*;
@@ -17,53 +18,68 @@ import static spark.Spark.*;
  */
 public class Style {
 
-  private static final String TAG = "Style";
+    private static final String TAG = "Style";
 
-  private static Gson gson = new GsonBuilder().create();
+    private static Gson gson = new GsonBuilder().create();
 
-  private static final int MAX_WALLPAPER_RETURN = 3;
+    private static final int MAX_WALLPAPER_RETURN = 3;
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 //        staticFileLocation("/wallpapers");
-    staticFiles.externalLocation("wallpapers");
-    port(6060);
-    post("/style", (request, response) -> {
-      HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
-      if (!ensureFacetIdValid(httpRequestBody)) {
-        LogUtil.F(TAG,"Invalid facetId..");
-        return "404";
-      }
-      LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo());
-      return getStyle();
-    });
-  }
+        staticFiles.externalLocation("wallpapers");
+        port(6060);
+        post("/style", (request, response) -> {
+            HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+            if (!ensureFacetIdValid(httpRequestBody)) {
+                LogUtil.F(TAG, "Invalid facetId..");
+                return "404";
+            }
+            LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo());
+            return getStyle();
+        });
 
-  public static final String IP = "http://api.kinglloy.com:6060";
-
-  private static final String DATA_KEY_WALLPAPER = "wallpapers";
-
-  private static String getStyle() {
-    Map<String, Object> dataMap = new HashMap<>();
-
-    List<WallpaperItem> items = WallpaperSourceParser.parseToList();
-
-    long seed = System.nanoTime();
-    Collections.shuffle(items, new Random(seed));
-    items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
-
-    dataMap.put(DATA_KEY_WALLPAPER, items);
-
-    LogUtil.D(TAG, items.toString());
-    System.out.println("------------");
-
-    return gson.toJson(dataMap);
-  }
-
-  private static boolean ensureFacetIdValid(HttpRequestBody requestBody) {
-    if (!requestBody.isValidBody()) {
-      LogUtil.D(TAG, "Invalid facetId : " + requestBody.getFacetId());
-      return false;
+        post("/style/advance", (request, response) -> {
+            HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+            if (!ensureFacetIdValid(httpRequestBody)) {
+                LogUtil.F(TAG, "Invalid facetId..");
+                return "404";
+            }
+            return getAdvance();
+        });
     }
-    return true;
-  }
+
+    public static final String IP = "http://api.kinglloy.com:6060";
+
+    private static final String DATA_KEY_WALLPAPER = "wallpapers";
+    private static final String DATA_KEY_ADVANCE_WALLPAPER = "advance_wallpapers";
+
+    private static String getStyle() {
+        Map<String, Object> dataMap = new HashMap<>();
+
+        List<WallpaperItem> items = WallpaperSourceParser.parseToList();
+
+        long seed = System.nanoTime();
+        Collections.shuffle(items, new Random(seed));
+        items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
+
+        dataMap.put(DATA_KEY_WALLPAPER, items);
+        dataMap.put(DATA_KEY_ADVANCE_WALLPAPER, AdvanceWallpaperParser.parseToList());
+
+        LogUtil.D(TAG, items.toString());
+        System.out.println("------------");
+
+        return gson.toJson(dataMap);
+    }
+
+    private static boolean ensureFacetIdValid(HttpRequestBody requestBody) {
+        if (!requestBody.isValidBody()) {
+            LogUtil.D(TAG, "Invalid facetId : " + requestBody.getFacetId());
+            return false;
+        }
+        return true;
+    }
+
+    private static String getAdvance() {
+        return gson.toJson(AdvanceWallpaperParser.parseToList());
+    }
 }
