@@ -23,9 +23,20 @@ public class AdvanceWallpaperParser {
         item.iconUrl = "http://172.22.158.81:6060/advance/icons/wallpaper_demo.gif";
         item.downloadUrl = "http://172.22.158.81:6060/advance/components/cube.component";
         item.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/cube.component");
-        item.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/cube.component");
-        item.providerName = "com.yalin.component.ProviderImpl";
+        item.providerName = "com.yalin.component1.ProviderImpl";
+
+        AdvanceWallpaperItem item2 = new AdvanceWallpaperItem();
+        item2.name = "绿色草地";
+        item2.wallpaperId = UUID.randomUUID().toString();
+        item2.link = "http://www.kinglloy.com/";
+        item2.author = "Yalin";
+        item2.iconUrl = "http://172.22.158.81:6060/advance/icons/wallpaper_demo.gif";
+        item2.downloadUrl = "http://172.22.158.81:6060/advance/components/blue.component";
+        item2.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/blue.component");
+        item2.providerName = "com.yalin.component2.ProviderImpl";
+
         wallpapers.add(item);
+        wallpapers.add(item2);
 
         return wallpapers;
     }
