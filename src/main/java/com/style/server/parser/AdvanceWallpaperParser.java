@@ -57,10 +57,32 @@ public class AdvanceWallpaperParser {
         rainbowItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/rainbow.component");
         rainbowItem.providerName = "com.yalin.wallpaper.rainbow.ProviderImpl";
 
+        AdvanceWallpaperItem dripplerItem = new AdvanceWallpaperItem();
+        dripplerItem.name = "Drippler";
+        dripplerItem.wallpaperId = UUID.randomUUID().toString();
+        dripplerItem.link = "kinglloy.com";
+        dripplerItem.author = "Yalin";
+        dripplerItem.iconUrl = RES_HOST + "/advance/icons/rainbow.png";
+        dripplerItem.downloadUrl = RES_HOST + "/advance/components/drippler.component";
+        dripplerItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/drippler.component");
+        dripplerItem.providerName = "com.yalin.wallpaper.drippler.ProviderImpl";
+
+        AdvanceWallpaperItem limitlessItem = new AdvanceWallpaperItem();
+        limitlessItem.name = "Limitless";
+        limitlessItem.wallpaperId = UUID.randomUUID().toString();
+        limitlessItem.link = "kinglloy.com";
+        limitlessItem.author = "Alexander Fedora";
+        limitlessItem.iconUrl = RES_HOST + "/advance/icons/rainbow.png";
+        limitlessItem.downloadUrl = RES_HOST + "/advance/components/limitless.component";
+        limitlessItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/limitless.component");
+        limitlessItem.providerName = "com.yalin.wallpaper.limitless.ProviderImpl";
+
         wallpapers.add(cubeItem);
         wallpapers.add(blueItem);
         wallpapers.add(pointItem);
         wallpapers.add(rainbowItem);
+        wallpapers.add(dripplerItem);
+        wallpapers.add(limitlessItem);
 
         return wallpapers;
     }
