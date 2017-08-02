@@ -12,7 +12,7 @@ import java.util.UUID;
  * on 2017/7/28.
  */
 public class AdvanceWallpaperParser {
-    private static final String RES_HOST = "http://172.22.158.86:6060";
+    private static final String RES_HOST = "http://172.22.158.80:6060";
 
     public static List<AdvanceWallpaperItem> parseToList() {
         List<AdvanceWallpaperItem> wallpapers = new ArrayList<>();
@@ -25,7 +25,7 @@ public class AdvanceWallpaperParser {
         cubeItem.iconUrl = RES_HOST + "/advance/icons/cube.png";
         cubeItem.downloadUrl = RES_HOST + "/advance/components/cube.component";
         cubeItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/cube.component");
-        cubeItem.providerName = "com.yalin.component1.ProviderImpl";
+        cubeItem.providerName = "com.yalin.wallpaper.cube.ProviderImpl";
 
         AdvanceWallpaperItem blueItem = new AdvanceWallpaperItem();
         blueItem.name = "绿色草地";
