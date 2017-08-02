@@ -20,6 +20,8 @@ public class Style {
 
     private static final String TAG = "Style";
 
+    private static final int PORT = 6066;
+
     private static Gson gson = new GsonBuilder().create();
 
     private static final int MAX_WALLPAPER_RETURN = 3;
@@ -27,7 +29,7 @@ public class Style {
     public static void main(String[] args) {
 //        staticFileLocation("/wallpapers");
         staticFiles.externalLocation("wallpapers");
-        port(6060);
+        port(PORT);
         post("/style", (request, response) -> {
             HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
             if (!ensureFacetIdValid(httpRequestBody)) {
@@ -48,7 +50,7 @@ public class Style {
         });
     }
 
-    public static final String IP = "http://api.kinglloy.com:6060";
+    public static final String IP = "http://demo.kinglloy.com:" + PORT;
 
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
     private static final String DATA_KEY_ADVANCE_WALLPAPER = "advance_wallpapers";

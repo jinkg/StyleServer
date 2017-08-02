@@ -7,12 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static com.style.server.Style.IP;
+
 /**
  * jinyalin
  * on 2017/7/28.
  */
 public class AdvanceWallpaperParser {
-    private static final String RES_HOST = "http://172.22.158.80:6060";
+    private static final String RES_HOST = IP;
 
     public static List<AdvanceWallpaperItem> parseToList() {
         List<AdvanceWallpaperItem> wallpapers = new ArrayList<>();
@@ -20,7 +22,7 @@ public class AdvanceWallpaperParser {
         AdvanceWallpaperItem cubeItem = new AdvanceWallpaperItem();
         cubeItem.name = "旋转立方";
         cubeItem.wallpaperId = UUID.randomUUID().toString();
-        cubeItem.link = "http://www.kinglloy.com/";
+        cubeItem.link = "www.kinglloy.com/";
         cubeItem.author = "Yalin";
         cubeItem.iconUrl = RES_HOST + "/advance/icons/cube.png";
         cubeItem.downloadUrl = RES_HOST + "/advance/components/cube.component";
