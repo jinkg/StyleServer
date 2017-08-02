@@ -72,7 +72,7 @@ public class AdvanceWallpaperParser {
         limitlessItem.wallpaperId = UUID.randomUUID().toString();
         limitlessItem.link = "kinglloy.com";
         limitlessItem.author = "Alexander Fedora";
-        limitlessItem.iconUrl = RES_HOST + "/advance/icons/rainbow.png";
+        limitlessItem.iconUrl = RES_HOST + "/advance/icons/limitless.png";
         limitlessItem.downloadUrl = RES_HOST + "/advance/components/limitless.component";
         limitlessItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/limitless.component");
         limitlessItem.providerName = "com.yalin.wallpaper.limitless.ProviderImpl";
