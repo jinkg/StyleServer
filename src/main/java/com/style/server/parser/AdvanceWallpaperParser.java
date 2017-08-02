@@ -27,26 +27,6 @@ public class AdvanceWallpaperParser {
         cubeItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/cube.component");
         cubeItem.providerName = "com.yalin.wallpaper.cube.ProviderImpl";
 
-        AdvanceWallpaperItem blueItem = new AdvanceWallpaperItem();
-        blueItem.name = "绿色草地";
-        blueItem.wallpaperId = UUID.randomUUID().toString();
-        blueItem.link = "http://www.kinglloy.com/";
-        blueItem.author = "Yalin";
-        blueItem.iconUrl = RES_HOST + "/advance/icons/the_blue.png";
-        blueItem.downloadUrl = RES_HOST + "/advance/components/blue.component";
-        blueItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/blue.component");
-        blueItem.providerName = "com.yalin.component2.ProviderImpl";
-
-        AdvanceWallpaperItem pointItem = new AdvanceWallpaperItem();
-        pointItem.name = "点点点";
-        pointItem.wallpaperId = UUID.randomUUID().toString();
-        pointItem.link = "http://www.kinglloy.com/";
-        pointItem.author = "Yalin";
-        pointItem.iconUrl = RES_HOST + "/advance/icons/the_blue.png";
-        pointItem.downloadUrl = RES_HOST + "/advance/components/point.component";
-        pointItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/point.component");
-        pointItem.providerName = "com.yalin.component.point.ProviderImpl";
-
         AdvanceWallpaperItem rainbowItem = new AdvanceWallpaperItem();
         rainbowItem.name = "Rainbow";
         rainbowItem.wallpaperId = UUID.randomUUID().toString();
@@ -56,16 +36,6 @@ public class AdvanceWallpaperParser {
         rainbowItem.downloadUrl = RES_HOST + "/advance/components/rainbow.component";
         rainbowItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/rainbow.component");
         rainbowItem.providerName = "com.yalin.wallpaper.rainbow.ProviderImpl";
-
-        AdvanceWallpaperItem dripplerItem = new AdvanceWallpaperItem();
-        dripplerItem.name = "Drippler";
-        dripplerItem.wallpaperId = UUID.randomUUID().toString();
-        dripplerItem.link = "kinglloy.com";
-        dripplerItem.author = "Yalin";
-        dripplerItem.iconUrl = RES_HOST + "/advance/icons/rainbow.png";
-        dripplerItem.downloadUrl = RES_HOST + "/advance/components/drippler.component";
-        dripplerItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/drippler.component");
-        dripplerItem.providerName = "com.yalin.wallpaper.drippler.ProviderImpl";
 
         AdvanceWallpaperItem limitlessItem = new AdvanceWallpaperItem();
         limitlessItem.name = "Limitless";
@@ -77,12 +47,31 @@ public class AdvanceWallpaperParser {
         limitlessItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/limitless.component");
         limitlessItem.providerName = "com.yalin.wallpaper.limitless.ProviderImpl";
 
+        AdvanceWallpaperItem blurredItem = new AdvanceWallpaperItem();
+        blurredItem.name = "Blurred Lines";
+        blurredItem.wallpaperId = UUID.randomUUID().toString();
+        blurredItem.link = "kinglloy.com";
+        blurredItem.author = "Alexander Fedora";
+        blurredItem.iconUrl = RES_HOST + "/advance/icons/blurred_line.png";
+        blurredItem.downloadUrl = RES_HOST + "/advance/components/blurred_line.component";
+        blurredItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/blurred_line.component");
+        blurredItem.providerName = "com.yalin.wallpaper.blurred_line.ProviderImpl";
+
+        AdvanceWallpaperItem sunItem = new AdvanceWallpaperItem();
+        sunItem.name = "Sun";
+        sunItem.wallpaperId = UUID.randomUUID().toString();
+        sunItem.link = "kinglloy.com";
+        sunItem.author = "Alexander Fedora";
+        sunItem.iconUrl = RES_HOST + "/advance/icons/sun.png";
+        sunItem.downloadUrl = RES_HOST + "/advance/components/sun.component";
+        sunItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/sun.component");
+        sunItem.providerName = "com.yalin.wallpaper.sun.ProviderImpl";
+
         wallpapers.add(cubeItem);
-        wallpapers.add(blueItem);
-        wallpapers.add(pointItem);
         wallpapers.add(rainbowItem);
-        wallpapers.add(dripplerItem);
         wallpapers.add(limitlessItem);
+        wallpapers.add(blurredItem);
+        wallpapers.add(sunItem);
 
         return wallpapers;
     }
