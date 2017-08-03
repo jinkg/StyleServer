@@ -3,7 +3,6 @@ package com.style.server.parser;
 import com.style.server.ChecksumUtil;
 import com.style.server.model.WallpaperItem;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,8 +16,7 @@ public class WallpaperSourceParser {
     private static final String WALLPAPER_SOURCE_FILE = "./wallpaper.txt";
     private static final String WALLPAPER_SOURCE_DIR = "./wallpapers/";
     private static final String WALLPAPER_DEMO_DIR = "./wallpapers/demo/";
-    private static final String FILED_SEPARATOR = "\\|";
-    private static final int FILED_COUNT = 4;
+    private static final int FIELD_COUNT = 4;
 
     private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
@@ -36,31 +34,11 @@ public class WallpaperSourceParser {
         }
 
         List<WallpaperItem> wallpaperItems = new ArrayList<>();
-        File file = new File(WALLPAPER_SOURCE_FILE);
-        BufferedReader bufferedReader = null;
-        try {
-            FileInputStream is = new FileInputStream(file);
-            InputStreamReader isr = new InputStreamReader(is, "UTF-8");
-            bufferedReader = new BufferedReader(isr);
-            // comment line
-            bufferedReader.readLine();
-            for (String line = bufferedReader.readLine();
-                 line != null && line.length() > 0;
-                 line = bufferedReader.readLine()) {
-                String[] wallpaperFields = line.split(FILED_SEPARATOR);
-                WallpaperItem item = parseFields(wallpaperFields);
-                if (item != null) {
-                    wallpaperItems.add(item);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (bufferedReader != null) {
-                    bufferedReader.close();
-                }
-            } catch (Exception ignored) {
+        ArrayList<String[]> itemFileds = FileParser.parseFile(WALLPAPER_SOURCE_FILE);
+        for (String[] fields : itemFileds) {
+            WallpaperItem item = parseFields(fields);
+            if (item != null) {
+                wallpaperItems.add(item);
             }
         }
         if (wallpaperItems.size() == 0) {
@@ -73,7 +51,7 @@ public class WallpaperSourceParser {
     }
 
     private static WallpaperItem parseFields(String[] wallpaperFields) {
-        if (wallpaperFields != null && wallpaperFields.length == FILED_COUNT) {
+        if (wallpaperFields != null && wallpaperFields.length == FIELD_COUNT) {
 
             WallpaperItem item = new WallpaperItem(UUID.randomUUID().toString(), wallpaperFields[0].trim(),
                     wallpaperFields[1].trim(), wallpaperFields[2].trim(),

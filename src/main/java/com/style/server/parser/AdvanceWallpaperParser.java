@@ -16,87 +16,62 @@ import static com.style.server.Style.IP;
 public class AdvanceWallpaperParser {
     private static final String RES_HOST = IP;
 
-    public static List<AdvanceWallpaperItem> parseToList() {
-        List<AdvanceWallpaperItem> wallpapers = new ArrayList<>();
+    private static final String COMPONENT_SOURCE_FILE = "./component.txt";
+    private static final String COMPONENT_ROOT_DIR = "./wallpapers";
+    private static final String COMPONENT_SOURCE_DIR = "/advance/components/";
+    private static final String COMPONENT_ICON_DIR = "/advance/icons/";
+    private static final int FIELD_COUNT = 5;
 
-        AdvanceWallpaperItem cubeItem = new AdvanceWallpaperItem();
-        cubeItem.name = "旋转立方";
-        cubeItem.wallpaperId = UUID.randomUUID().toString();
-        cubeItem.link = "www.kinglloy.com/";
-        cubeItem.author = "Yalin";
-        cubeItem.iconUrl = RES_HOST + "/advance/icons/cube.png";
-        cubeItem.downloadUrl = RES_HOST + "/advance/components/cube.component";
-        cubeItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/cube.component");
-        cubeItem.providerName = "com.yalin.wallpaper.cube.ProviderImpl";
+    private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
-        AdvanceWallpaperItem rainbowItem = new AdvanceWallpaperItem();
-        rainbowItem.name = "Rainbow";
-        rainbowItem.wallpaperId = UUID.randomUUID().toString();
-        rainbowItem.link = "kinglloy.com";
-        rainbowItem.author = "Yalin";
-        rainbowItem.iconUrl = RES_HOST + "/advance/icons/rainbow.png";
-        rainbowItem.downloadUrl = RES_HOST + "/advance/components/rainbow.component";
-        rainbowItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/rainbow.component");
-        rainbowItem.providerName = "com.yalin.wallpaper.rainbow.ProviderImpl";
+    private static final List<AdvanceWallpaperItem> mCachedWallpaper = new ArrayList<>();
+    private static long lastRefreshCacheTime;
 
-        AdvanceWallpaperItem limitlessItem = new AdvanceWallpaperItem();
-        limitlessItem.name = "Limitless";
-        limitlessItem.wallpaperId = UUID.randomUUID().toString();
-        limitlessItem.link = "kinglloy.com";
-        limitlessItem.author = "Alexander Fedora";
-        limitlessItem.iconUrl = RES_HOST + "/advance/icons/limitless.png";
-        limitlessItem.downloadUrl = RES_HOST + "/advance/components/limitless.component";
-        limitlessItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/limitless.component");
-        limitlessItem.providerName = "com.yalin.wallpaper.limitless.ProviderImpl";
+    private static boolean maybeInvalidCache() {
+        long currentTime = System.currentTimeMillis();
+        return currentTime - lastRefreshCacheTime > CACHE_VALID_TIMEOUT;
+    }
 
-        AdvanceWallpaperItem blurredItem = new AdvanceWallpaperItem();
-        blurredItem.name = "Blurred Lines";
-        blurredItem.wallpaperId = UUID.randomUUID().toString();
-        blurredItem.link = "kinglloy.com";
-        blurredItem.author = "Alexander Fedora";
-        blurredItem.iconUrl = RES_HOST + "/advance/icons/blurred_line.png";
-        blurredItem.downloadUrl = RES_HOST + "/advance/components/blurred_line.component";
-        blurredItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/blurred_line.component");
-        blurredItem.providerName = "com.yalin.wallpaper.blurred_line.ProviderImpl";
+    public static synchronized List<AdvanceWallpaperItem> parseToList() {
+        if (!maybeInvalidCache()) {
+            return mCachedWallpaper;
+        }
 
-        AdvanceWallpaperItem sunItem = new AdvanceWallpaperItem();
-        sunItem.name = "Sun";
-        sunItem.wallpaperId = UUID.randomUUID().toString();
-        sunItem.link = "kinglloy.com";
-        sunItem.author = "Alexander Fedora";
-        sunItem.iconUrl = RES_HOST + "/advance/icons/sun.png";
-        sunItem.downloadUrl = RES_HOST + "/advance/components/sun.component";
-        sunItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/sun.component");
-        sunItem.providerName = "com.yalin.wallpaper.sun.ProviderImpl";
+        List<AdvanceWallpaperItem> wallpaperItems = new ArrayList<>();
+        ArrayList<String[]> itemsInfo = FileParser.parseFile(COMPONENT_SOURCE_FILE);
+        for (String[] fields : itemsInfo) {
+            AdvanceWallpaperItem item = parseFields(fields);
+            if (item != null) {
+                wallpaperItems.add(item);
+            }
+        }
 
-        AdvanceWallpaperItem flowerItem = new AdvanceWallpaperItem();
-        flowerItem.name = "Flower";
-        flowerItem.wallpaperId = UUID.randomUUID().toString();
-        flowerItem.link = "kinglloy.com";
-        flowerItem.author = "Harism";
-        flowerItem.iconUrl = RES_HOST + "/advance/icons/flower.png";
-        flowerItem.downloadUrl = RES_HOST + "/advance/components/flower.component";
-        flowerItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/flower.component");
-        flowerItem.providerName = "com.yalin.wallpaper.flower.ProviderImpl";
+        if (!itemsInfo.isEmpty()) {
+            mCachedWallpaper.clear();
+            mCachedWallpaper.addAll(wallpaperItems);
+            lastRefreshCacheTime = System.currentTimeMillis();
+        }
+        return wallpaperItems;
+    }
 
-        AdvanceWallpaperItem hackerItem = new AdvanceWallpaperItem();
-        hackerItem.name = "Hacker";
-        hackerItem.wallpaperId = UUID.randomUUID().toString();
-        hackerItem.link = "kinglloy.com";
-        hackerItem.author = "Harism";
-        hackerItem.iconUrl = RES_HOST + "/advance/icons/hacker.png";
-        hackerItem.downloadUrl = RES_HOST + "/advance/components/hacker.component";
-        hackerItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/hacker.component");
-        hackerItem.providerName = "com.yalin.wallpaper.hacker.ProviderImpl";
+    private static AdvanceWallpaperItem parseFields(String[] wallpaperFields) {
+        if (wallpaperFields != null && wallpaperFields.length == FIELD_COUNT) {
+            AdvanceWallpaperItem item = new AdvanceWallpaperItem();
+            String filename = wallpaperFields[1].trim();
+            item.name = wallpaperFields[0].trim();
+            item.downloadUrl = RES_HOST + COMPONENT_SOURCE_DIR + filename;
+            item.iconUrl = RES_HOST + COMPONENT_ICON_DIR + wallpaperFields[2].trim();
+            item.providerName = wallpaperFields[3].trim();
+            item.author = wallpaperFields[4].trim();
+            item.wallpaperId = UUID.randomUUID().toString();
+            item.link = "kinglloy.com";
 
-        wallpapers.add(cubeItem);
-        wallpapers.add(rainbowItem);
-        wallpapers.add(limitlessItem);
-        wallpapers.add(blurredItem);
-        wallpapers.add(sunItem);
-        wallpapers.add(flowerItem);
-        wallpapers.add(hackerItem);
+            item.checkSum = ChecksumUtil.getChecksum(COMPONENT_ROOT_DIR + COMPONENT_SOURCE_DIR + filename);
 
-        return wallpapers;
+            if (item.checkSum != null && item.checkSum.length() > 0) {
+                return item;
+            }
+        }
+        return null;
     }
 }

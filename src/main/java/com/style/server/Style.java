@@ -20,7 +20,7 @@ public class Style {
 
     private static final String TAG = "Style";
 
-    private static final int PORT = 6066;
+    private static final int PORT = 6060;
 
     private static Gson gson = new GsonBuilder().create();
 
@@ -50,7 +50,7 @@ public class Style {
         });
     }
 
-    public static final String IP = "http://demo.kinglloy.com:" + PORT;
+    public static final String IP = "http://api.kinglloy.com:" + PORT;
 
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
     private static final String DATA_KEY_ADVANCE_WALLPAPER = "advance_wallpapers";

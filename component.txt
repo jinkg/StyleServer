@@ -1,0 +1,8 @@
+name            | file name             | icon name         | provider                                      | author
+旋转立方         | cube.component        | cube.png          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin
+Rainbow         | rainbow.component     | rainbow.png       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin
+Limitless       | limitless.component   | limitless.png     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora
+Blurred Lines   | blurred_line.component| blurred_line.png  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora
+Sun             | sun.component         | sun.png           | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora
+Flower          | flower.component      | flower.png        | com.yalin.wallpaper.flower.ProviderImpl       | Harism
+Hacker          | hacker.component      | hacker.png        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh
