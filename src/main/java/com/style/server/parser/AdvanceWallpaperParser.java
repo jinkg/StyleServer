@@ -79,12 +79,23 @@ public class AdvanceWallpaperParser {
         flowerItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/flower.component");
         flowerItem.providerName = "com.yalin.wallpaper.flower.ProviderImpl";
 
+        AdvanceWallpaperItem hackerItem = new AdvanceWallpaperItem();
+        hackerItem.name = "Hacker";
+        hackerItem.wallpaperId = UUID.randomUUID().toString();
+        hackerItem.link = "kinglloy.com";
+        hackerItem.author = "Harism";
+        hackerItem.iconUrl = RES_HOST + "/advance/icons/hacker.png";
+        hackerItem.downloadUrl = RES_HOST + "/advance/components/hacker.component";
+        hackerItem.checkSum = ChecksumUtil.getChecksum("./wallpapers/advance/components/hacker.component");
+        hackerItem.providerName = "com.yalin.wallpaper.hacker.ProviderImpl";
+
         wallpapers.add(cubeItem);
         wallpapers.add(rainbowItem);
         wallpapers.add(limitlessItem);
         wallpapers.add(blurredItem);
         wallpapers.add(sunItem);
         wallpapers.add(flowerItem);
+        wallpapers.add(hackerItem);
 
         return wallpapers;
     }
