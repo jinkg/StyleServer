@@ -1,11 +1,11 @@
 name            | file name             | icon name         | provider                                      | author
-旋转立方         | cube.component        | cube.png          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin
-Rainbow         | rainbow.component     | rainbow.png       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin
-Limitless       | limitless.component   | limitless.png     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora
-Blurred Lines   | blurred_line.component| blurred_line.png  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora
-Flower          | flower.component      | flower.png        | com.yalin.wallpaper.flower.ProviderImpl       | Harism
-Hacker          | hacker.component      | hacker.png        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh
-阴阳             | yinyang.component     | yinyang.png      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism
+旋转立方         | cube.component        | cube.jpg          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin
+Rainbow         | rainbow.component     | rainbow.jpg       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin
+Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora
+Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora
+Flower          | flower.component      | flower.jpg        | com.yalin.wallpaper.flower.ProviderImpl       | Harism
+Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh
+阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism
 Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl       | Harism
 Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism
 纸飞机           | flier.component       | flier.jpg         | com.yalin.wallpaper.flier.ProviderImpl          | Harism
