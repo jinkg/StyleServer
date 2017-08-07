@@ -8,5 +8,4 @@ Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpape
 阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism
 Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl       | Harism
 Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism
-纸飞机           | flier.component       | flier.jpg         | com.yalin.wallpaper.flier.ProviderImpl          | Harism
 条纹             | stripe.component       | stripe.jpg         | com.yalin.wallpaper.stripe.ProviderImpl          | Harism
