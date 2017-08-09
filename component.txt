@@ -11,3 +11,4 @@ Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper
 条纹             | stripe.component       | stripe.jpg         | com.yalin.wallpaper.stripe.ProviderImpl          | Harism
 Boids             | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl          | Marc DellaVolpe
 贝塞尔时钟        | bezierclock.component   | bezierclock.jpg         | com.yalin.wallpaper.bezierclock.ProviderImpl          | Oleg Godovykh
+沙丁鱼             | shark.component      | shark.jpg            | com.yalin.wallpaper.shark.ProviderImpl          | Atsushi Konno
