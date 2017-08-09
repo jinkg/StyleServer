@@ -10,4 +10,4 @@ Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpape
 Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism
 条纹             | stripe.component       | stripe.jpg         | com.yalin.wallpaper.stripe.ProviderImpl          | Harism
 Boids             | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl          | Marc DellaVolpe
-贝塞尔时钟        | bezierclock.component   | bezierclock.jpg         | com.yalin.wallpaper.bezierclock.ProviderImpl          | Marc DellaVolpe
+贝塞尔时钟        | bezierclock.component   | bezierclock.jpg         | com.yalin.wallpaper.bezierclock.ProviderImpl          | Oleg Godovykh
