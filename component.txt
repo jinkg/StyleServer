@@ -9,3 +9,4 @@ Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpape
 Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl       | Harism
 Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism
 条纹             | stripe.component       | stripe.jpg         | com.yalin.wallpaper.stripe.ProviderImpl          | Harism
+Boids             | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl          | Harism
