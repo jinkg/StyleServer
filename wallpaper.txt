@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-years_of_history.jpg                    | 歲華紀勝圖                            | 吳彬, 明                  | kinglloy.com
-blue-morning-glories.jpg                | Blue Morning Glories                  | Georgia O'Keeffe, 1935    | kinglloy.com
-birds-admist-willow.jpg                 | Birds Admist Willow                   | 林风眠                      | kinglloy.com
+pistachio-trees.jpg                     | Pistachio Trees                       | Hoca Ali Riza               | kinglloy.com
+north-shore-lake-superior-1926.jpg      | North Shore, Lake Superior            | Lawren Harris, 1926         | kinglloy.com
+natural-bridge-1860.jpg                 | Natural Bridge                        | David Johnson, 1860         | kinglloy.com
