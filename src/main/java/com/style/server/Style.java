@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.style.server.entity.HttpRequestBody;
 import com.style.server.log.LogUtil;
+import com.style.server.model.AdvanceWallpaperItem;
 import com.style.server.model.WallpaperItem;
 import com.style.server.parser.AdvanceWallpaperParser;
 import com.style.server.parser.WallpaperSourceParser;
@@ -26,6 +27,8 @@ public class Style {
 
     private static final int MAX_WALLPAPER_RETURN = 3;
 
+    private static final int VERSION_CODE_2_7_1 = 25;
+
     public static void main(String[] args) {
 //        staticFileLocation("/wallpapers");
         staticFiles.externalLocation("wallpapers");
@@ -37,7 +40,9 @@ public class Style {
                 return "404";
             }
             LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo());
-            return getStyle();
+
+            int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
+            return getStyle(versionCode);
         });
 
         post("/style/advance", (request, response) -> {
@@ -46,7 +51,8 @@ public class Style {
                 LogUtil.F(TAG, "Invalid facetId..");
                 return "404";
             }
-            return getAdvance();
+            int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
+            return getAdvance(versionCode);
         });
     }
 
@@ -55,7 +61,7 @@ public class Style {
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
     private static final String DATA_KEY_ADVANCE_WALLPAPER = "advance_wallpapers";
 
-    private static String getStyle() {
+    private static String getStyle(int clientVersion) {
         Map<String, Object> dataMap = new HashMap<>();
 
         List<WallpaperItem> items = WallpaperSourceParser.parseToList();
@@ -64,8 +70,10 @@ public class Style {
         Collections.shuffle(items, new Random(seed));
         items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
 
+        List<AdvanceWallpaperItem> advanceItems =
+                filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
         dataMap.put(DATA_KEY_WALLPAPER, items);
-        dataMap.put(DATA_KEY_ADVANCE_WALLPAPER, AdvanceWallpaperParser.parseToList());
+        dataMap.put(DATA_KEY_ADVANCE_WALLPAPER, advanceItems);
 
         LogUtil.D(TAG, items.toString());
         System.out.println("------------");
@@ -81,7 +89,24 @@ public class Style {
         return true;
     }
 
-    private static String getAdvance() {
-        return gson.toJson(AdvanceWallpaperParser.parseToList());
+    private static String getAdvance(int clientVersion) {
+        List<AdvanceWallpaperItem> advanceItems =
+                filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
+        return gson.toJson(advanceItems);
+    }
+
+    private static List<AdvanceWallpaperItem> filterAdvanceItems(
+            List<AdvanceWallpaperItem> advanceItems, int clientVersion) {
+        if (clientVersion >= VERSION_CODE_2_7_1) {
+            return advanceItems;
+        } else {
+            List<AdvanceWallpaperItem> filteredItems = new ArrayList<>();
+            for (AdvanceWallpaperItem item : advanceItems) {
+                if (!item.lazyDownload) {
+                    filteredItems.add(item);
+                }
+            }
+            return filteredItems;
+        }
     }
 }

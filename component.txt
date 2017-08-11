@@ -1,14 +1,14 @@
-name            | file name             | icon name         | provider                                      | author
-旋转立方         | cube.component        | cube.jpg          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin
-Rainbow         | rainbow.component     | rainbow.jpg       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin
-Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora
-Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora
-Flower          | flower.component      | flower.jpg        | com.yalin.wallpaper.flower.ProviderImpl       | Harism
-Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh
-阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism
-Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl       | Harism
-Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism
-条纹             | stripe.component       | stripe.jpg         | com.yalin.wallpaper.stripe.ProviderImpl          | Harism
-Boids             | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl          | Marc DellaVolpe
-贝塞尔时钟        | bezierclock.component   | bezierclock.jpg         | com.yalin.wallpaper.bezierclock.ProviderImpl          | Oleg Godovykh
-沙丁鱼             | shark.component      | shark.jpg            | com.yalin.wallpaper.shark.ProviderImpl          | Atsushi Konno
+name            | file name             | icon name         | provider                                      | author                    | lazy   | ad
+旋转立方         | cube.component        | cube.jpg          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin                     | 0      | 0
+Rainbow         | rainbow.component     | rainbow.jpg       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin                     | 0      | 0
+Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora          | 0      | 0
+Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 0      | 0
+Flower          | flower.component      | flower.jpg        | com.yalin.wallpaper.flower.ProviderImpl       | Harism                    | 0      | 0
+Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh                    | 0      | 0
+阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism                    | 0      | 0
+Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl    | Harism                    | 0      | 0
+Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism                    | 0      | 0
+条纹             | stripe.component       | stripe.jpg       | com.yalin.wallpaper.stripe.ProviderImpl       | Harism                    | 0      | 0
+Boids            | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl        | Marc DellaVolpe          | 0      | 0
+贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 1      | 1
+沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 0

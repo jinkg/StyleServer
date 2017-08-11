@@ -1,7 +1,5 @@
 package com.style.server.parser;
 
-import com.style.server.model.AdvanceWallpaperItem;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;

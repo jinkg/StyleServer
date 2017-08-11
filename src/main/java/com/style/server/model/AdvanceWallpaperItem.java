@@ -13,5 +13,8 @@ public class AdvanceWallpaperItem {
     public String downloadUrl;
     public String providerName;
 
+    public boolean lazyDownload = false;
+    public boolean needAd = false;
+
     public String checkSum;
 }
