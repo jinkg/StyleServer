@@ -12,4 +12,4 @@ Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper
 Boids            | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl        | Marc DellaVolpe          | 0      | 0
 贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 0      | 1
 沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 0      | 0
-Sun             | sun.component         | sun.png           | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 1
+Sun             | sun.component         | sun.jpg           | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 1
