@@ -10,5 +10,6 @@ Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpape
 Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism                    | 0      | 0
 条纹             | stripe.component       | stripe.jpg       | com.yalin.wallpaper.stripe.ProviderImpl       | Harism                    | 0      | 0
 Boids            | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl        | Marc DellaVolpe          | 0      | 0
-贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 1      | 1
-沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 0
+贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 0      | 1
+沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 0      | 0
+Sun             | sun.component         | sun.png           | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 1
