@@ -97,16 +97,12 @@ public class Style {
 
     private static List<AdvanceWallpaperItem> filterAdvanceItems(
             List<AdvanceWallpaperItem> advanceItems, int clientVersion) {
-        if (clientVersion >= VERSION_CODE_2_7_1) {
-            return advanceItems;
-        } else {
-            List<AdvanceWallpaperItem> filteredItems = new ArrayList<>();
-            for (AdvanceWallpaperItem item : advanceItems) {
-                if (!item.lazyDownload) {
-                    filteredItems.add(item);
-                }
+        List<AdvanceWallpaperItem> filteredItems = new ArrayList<>();
+        for (AdvanceWallpaperItem item : advanceItems) {
+            if (item.minVersion <= clientVersion) {
+                filteredItems.add(item);
             }
-            return filteredItems;
         }
+        return filteredItems;
     }
 }

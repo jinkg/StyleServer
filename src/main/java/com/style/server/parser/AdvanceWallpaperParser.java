@@ -20,7 +20,7 @@ public class AdvanceWallpaperParser {
     private static final String COMPONENT_ROOT_DIR = "./wallpapers";
     private static final String COMPONENT_SOURCE_DIR = "/advance/components/";
     private static final String COMPONENT_ICON_DIR = "/advance/icons/";
-    private static final int FIELD_COUNT = 7;
+    private static final int FIELD_COUNT = 8;
 
     private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
@@ -67,6 +67,7 @@ public class AdvanceWallpaperParser {
             item.needAd = Integer.parseInt(wallpaperFields[6].trim()) == 1;
             item.wallpaperId = UUID.randomUUID().toString();
             item.link = "kinglloy.com";
+            item.minVersion = Integer.parseInt(wallpaperFields[7].trim());
 
             item.checkSum = ChecksumUtil.getChecksum(COMPONENT_ROOT_DIR + COMPONENT_SOURCE_DIR + filename);
 

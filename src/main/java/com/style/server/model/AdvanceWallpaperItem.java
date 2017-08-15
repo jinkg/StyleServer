@@ -12,6 +12,7 @@ public class AdvanceWallpaperItem {
     public String iconUrl;
     public String downloadUrl;
     public String providerName;
+    public int minVersion;
 
     public boolean lazyDownload = false;
     public boolean needAd = false;
