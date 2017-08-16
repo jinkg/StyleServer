@@ -16,3 +16,4 @@ Sun             | sun.component         | sun.jpg           | com.yalin.wallpape
 LoveBeat         | lovebeat.component    | lovebeat.jpg     | com.yalin.wallpaper.lovebeat.ProviderImpl     | Pham Trung Phuong          | 0      | 0   | 0
 布               | cloth.component       | cloth.jpg         | com.yalin.wallpaper.cloth.ProviderImpl        | Rares Barbantan           | 0      | 0    | 0
 Tic Tac Toe     | tictactoe.component    | tictactoe.jpg    | com.yalin.wallpaper.tictactoe.ProviderImpl      | Yalin                   | 1      | 0   | 25
+超级六边形        | hexagon.component      | hexagon.jpg      | com.yalin.wallpaper.super_hexagon.ProviderImpl | Chris Sp.                | 0      | 0   | 25
