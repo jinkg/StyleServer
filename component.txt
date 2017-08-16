@@ -16,4 +16,5 @@ Tic Tac Toe     | tictactoe.component    | tictactoe.jpg    | com.yalin.wallpape
 Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora          | 1      | 0    | 25
 Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 1      | 0    | 25
 沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 0    | 25
-Sun             | sun.component         | sun.jpg           | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 1    | 25
+Sun             | sun.component          | sun.jpg          | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 1    | 25
+DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl    | Cypher Cove             | 1      | 1    | 25
