@@ -1,19 +1,19 @@
 name            | file name             | icon name         | provider                                      | author                    | lazy   | ad   | version
 旋转立方         | cube.component        | cube.jpg          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin                     | 0      | 0    | 0
 Rainbow         | rainbow.component     | rainbow.jpg       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin                     | 0      | 0    | 0
-Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora          | 0      | 0    | 0
-Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 0      | 0    | 0
+Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora          | 1      | 0    | 25
+Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 1      | 0    | 25
 Flower          | flower.component      | flower.jpg        | com.yalin.wallpaper.flower.ProviderImpl       | Harism                    | 0      | 0    | 0
 Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh                    | 0      | 0    | 0
 阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism                    | 0      | 0    | 0
 Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl    | Harism                    | 0      | 0    | 0
 Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism                    | 0      | 0    | 0
-条纹             | stripe.component       | stripe.jpg       | com.yalin.wallpaper.stripe.ProviderImpl       | Harism                    | 0      | 0     | 0
+条纹             | stripe.component       | stripe.jpg       | com.yalin.wallpaper.stripe.ProviderImpl       | Harism                    | 0      | 0    | 0
 Boids            | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl        | Marc DellaVolpe          | 0      | 0    | 0
-贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 0      | 1   | 0
-沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 0      | 0  | 0
+贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 0      | 1    | 0
+沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 0    | 25
 Sun             | sun.component         | sun.jpg           | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 1    | 25
 LoveBeat         | lovebeat.component    | lovebeat.jpg     | com.yalin.wallpaper.lovebeat.ProviderImpl     | Pham Trung Phuong          | 0      | 0   | 0
-布               | cloth.component       | cloth.jpg         | com.yalin.wallpaper.cloth.ProviderImpl        | Rares Barbantan           | 0      | 0    | 0
-Tic Tac Toe     | tictactoe.component    | tictactoe.jpg    | com.yalin.wallpaper.tictactoe.ProviderImpl      | Yalin                   | 1      | 0   | 25
-超级六边形        | hexagon.component      | hexagon.jpg      | com.yalin.wallpaper.super_hexagon.ProviderImpl | Chris Sp.                | 0      | 0   | 25
+布               | cloth.component       | cloth.jpg         | com.yalin.wallpaper.cloth.ProviderImpl        | Rares Barbantan           | 1      | 0    | 25
+Tic Tac Toe     | tictactoe.component    | tictactoe.jpg    | com.yalin.wallpaper.tictactoe.ProviderImpl      | Yalin                   | 1      | 0     | 25
+超级六边形        | hexagon.component      | hexagon.jpg      | com.yalin.wallpaper.super_hexagon.ProviderImpl | Chris Sp.                | 0      | 0    | 0
