@@ -18,3 +18,4 @@ Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpape
 沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 1    | 25
 Sun             | sun.component          | sun.jpg          | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 0    | 25
 DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl    | Cypher Cove             | 1      | 1    | 25
+三角形           | muhtraingle.component   | muhtraingle.jpg | com.yalin.wallpaper.muhtraingle.ProviderImpl    | Federico Dossena        | 1      | 1    | 25
