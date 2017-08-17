@@ -19,3 +19,4 @@ Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpape
 Sun             | sun.component          | sun.jpg          | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 0    | 25
 DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl    | Cypher Cove             | 1      | 1    | 25
 三角形           | muhtraingle.component   | muhtraingle.jpg | com.yalin.wallpaper.muhtraingle.ProviderImpl    | Federico Dossena        | 1      | 1    | 25
+黄昏的风车   | nightfal_windmill.component  | windmill.jpg    | com.yalin.wallpaper.nightfal_windmill.ProviderImpl | Winterlight          | 1      | 1    | 25
