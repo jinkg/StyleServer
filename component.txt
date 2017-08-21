@@ -21,3 +21,4 @@ DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpape
 三角形           | muhtraingle.component   | muhtraingle.jpg | com.yalin.wallpaper.muhtraingle.ProviderImpl    | Federico Dossena        | 1      | 1    | 25
 黄昏之风车   | nightfal_windmill.component  | windmill.jpg    | com.yalin.wallpaper.nightfal_windmill.ProviderImpl | Winterlight          | 1      | 1    | 25
 黄昏之乡村   | nightfal_rural.component     | rural.jpg       | com.yalin.wallpaper.nightfal_rural.ProviderImpl    | Winterlight          | 1      | 1    | 25
+Chroma          | chroma.component         | chroma.jpg       | com.yalin.wallpaper.chroma.ProviderImpl        | Nic Dahlquist           | 1      | 1    | 25
