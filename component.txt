@@ -22,4 +22,5 @@ DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpape
 黄昏之风车   | nightfal_windmill.component  | windmill.jpg    | com.yalin.wallpaper.nightfal_windmill.ProviderImpl | Winterlight          | 1      | 1    | 25
 黄昏之乡村   | nightfal_rural.component     | rural.jpg       | com.yalin.wallpaper.nightfal_rural.ProviderImpl    | Winterlight          | 1      | 1    | 25
 Chroma          | chroma.component         | chroma.jpg       | com.yalin.wallpaper.chroma.ProviderImpl        | Nic Dahlquist           | 1      | 1    | 25
-Genesis          | genesis.component        | genesis.jpg       | com.yalin.wallpaper.genesis.ProviderImpl        | OBONO                | 1      | 0    | 0
+Genesis          | genesis.component        | genesis.jpg       | com.yalin.wallpaper.genesis.ProviderImpl        | OBONO                | 1      | 0    | 25
+森林             | forest.component        | forest.jpg       | com.yalin.wallpaper.forest.ProviderImpl         | KaKa                    | 1      | 1    | 25
