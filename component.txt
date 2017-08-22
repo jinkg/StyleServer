@@ -25,3 +25,4 @@ Chroma          | chroma.component         | chroma.jpg       | com.yalin.wallpa
 Genesis          | genesis.component        | genesis.jpg       | com.yalin.wallpaper.genesis.ProviderImpl        | OBONO                | 1      | 0    | 25
 森林             | forest.component        | forest.jpg       | com.yalin.wallpaper.forest.ProviderImpl         | KaKa                    | 1      | 1    | 25
 小坏猫           | sneakycat.component      | sneakycat.jpg       | com.yalin.wallpaper.sneakycat.ProviderImpl    | Winterlight           | 1      | 1    | 25
+星系             | galaxy.component          | galaxy.jpg       | com.yalin.wallpaper.galaxy.ProviderImpl         | Maxelus                | 1      | 1    | 25
