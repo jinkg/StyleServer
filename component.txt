@@ -28,4 +28,4 @@ Genesis          | genesis.component        | genesis.jpg       | com.yalin.wall
 星系             | galaxy.component          | galaxy.jpg       | com.yalin.wallpaper.galaxy.ProviderImpl         | Maxelus                | 1      | 1    | 25
 雨               | rain3d.component          | rain3d.jpg       | com.yalin.wallpaper.rain3d.ProviderImpl         | Yalin                | 1      | 1    | 25
 星光              | starlight.component      | starlight.jpg       | com.yalin.wallpaper.starlight.ProviderImpl   | Winterlight           | 1      | 1    | 25
-懒熊猫            | lazypanda.component      | lazypanda.jpg       | com.yalin.wallpaper.lazypanda.ProviderImpl   | Winterlight           | 1      | 1    | 25
+瞌睡熊猫            | lazypanda.component      | lazypanda.jpg       | com.yalin.wallpaper.lazypanda.ProviderImpl   | Winterlight           | 1      | 1    | 25
