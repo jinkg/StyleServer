@@ -31,3 +31,4 @@ Genesis          | genesis.component        | genesis.jpg       | com.yalin.wall
 瞌睡熊猫            | lazypanda.component      | lazypanda.jpg       | com.yalin.wallpaper.lazypanda.ProviderImpl   | Winterlight           | 1      | 1    | 25
 熊猫              | panda.component          | panda.jpg         | com.yalin.wallpaper.panda.ProviderImpl          | Winterlight           | 1      | 1    | 25
 秋               | autumn.component          | autumn.jpg         | com.yalin.wallpaper.autumn.ProviderImpl        | SubMad Group          | 1      | 1    | 25
+水               | water01.component          | water01.jpg         | com.yalin.wallpaper.water01.ProviderImpl     | Mosoyo                | 1      | 1    | 25
