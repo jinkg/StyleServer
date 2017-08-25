@@ -32,3 +32,5 @@ Genesis          | genesis.component        | genesis.jpg       | com.yalin.wall
 熊猫              | panda.component          | panda.jpg         | com.yalin.wallpaper.panda.ProviderImpl          | Winterlight           | 1      | 1    | 25
 秋               | autumn.component          | autumn.jpg         | com.yalin.wallpaper.autumn.ProviderImpl        | SubMad Group          | 1      | 1    | 25
 水               | water01.component          | water01.jpg         | com.yalin.wallpaper.water01.ProviderImpl     | Mosoyo                | 1      | 1    | 25
+水               | water02.component          | water02.jpg         | com.yalin.wallpaper.water02.ProviderImpl     | Mosoyo                | 1      | 1    | 25
+水               | water03.component          | water03.jpg         | com.yalin.wallpaper.water03.ProviderImpl     | Mosoyo                | 1      | 1    | 25
