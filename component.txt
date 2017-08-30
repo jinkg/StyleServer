@@ -35,3 +35,4 @@ Genesis          | genesis.component        | genesis.jpg       | com.yalin.wall
 水               | water02.component          | water02.jpg         | com.yalin.wallpaper.water02.ProviderImpl     | Mosoyo                | 1      | 1    | 25
 水               | water03.component          | water03.jpg         | com.yalin.wallpaper.water03.ProviderImpl     | Mosoyo                | 1      | 1    | 25
 六边形              | hexagon.component          | hexagon.jpg         | com.yalin.wallpaper.hexagon.ProviderImpl   | Yalin                | 1      | 1    | 25
+神秘光晕          | mystic_halo.component      | mystic_halo.jpg  | com.yalin.wallpaper.mystic_halo.ProviderImpl    | Zantetsuken          | 1      | 1    | 25
