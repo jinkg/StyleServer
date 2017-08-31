@@ -36,3 +36,4 @@ Genesis          | genesis.component        | genesis.jpg       | com.yalin.wall
 水               | water03.component          | water03.jpg         | com.yalin.wallpaper.water03.ProviderImpl     | Mosoyo                | 1      | 1    | 25
 六边形              | hexagon01.component      | hexagon01.jpg         | com.yalin.wallpaper.hexagon.ProviderImpl   | Yalin                | 1      | 1    | 25
 神秘光晕          | mystic_halo.component      | mystic_halo.jpg  | com.yalin.wallpaper.mystic_halo.ProviderImpl    | Zantetsuken          | 1      | 1    | 25
+模拟时钟          | analog_clock.component     | analog_clock.jpg  | com.yalin.wallpaper.analog_clock.ProviderImpl   | Style-7             | 1      | 1    | 25
