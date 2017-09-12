@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-midday-barren.jpg                           | Midday Barren                          | Neil Welliver, 1983           | kinglloy.com
-untitled-1996.jpg                           | 无题                                    | Hassan Massoudy, 1996         | kinglloy.com
-the-grand-lady-1920.jpg                     | The Grand Lady                         | John Collier, 1920            | kinglloy.com
+pavo-1968.jpg                               | Pavo                                   | Dan Christensen, 1968         | kinglloy.com
+mask-for-the-ballet-studio.jpg              | Mask                                   | Vadym Meller, 1919            | kinglloy.com
+spring-moon-1942.jpg                        | Spring Moon                            | Agnes Lawrence Pelton, 1942   | kinglloy.com
