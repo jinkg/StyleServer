@@ -1,4 +1,4 @@
 file name                                   | wallpaper name                         | author & date                 | tag
-pavo-1968.jpg                               | Pavo                                   | Dan Christensen, 1968         | kinglloy.com
-mask-for-the-ballet-studio.jpg              | Mask                                   | Vadym Meller, 1919            | kinglloy.com
-spring-moon-1942.jpg                        | Spring Moon                            | Agnes Lawrence Pelton, 1942   | kinglloy.com
+birds-of-paradise-1940.jpg                  | 天堂鸟                                  | 齐白石, 1940                   | kinglloy.com
+protein-and-cherries-1944.jpg               | 樱桃松鼠画                               | 齐白石, 1944                   | kinglloy.com
+sunrise-of-wonder-v.jpg                     | Sunrise Of Wonder V                    | John Miller                   | kinglloy.com
