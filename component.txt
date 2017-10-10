@@ -48,3 +48,8 @@ Eagle            | animal_eagle.component     | animal_eagle.jpg    | com.yalin.
 六边形-彩虹       | hexshader_rainbow.component | hexshader_rainbow.jpg | com.yalin.wallpaper.hexshader_rainbow.ProviderImpl | Sergey Konyukhov   | 1      | 1    | 25
 Pixel Rain        | pixelrain.component        | pixelrain.jpg        | com.yalin.wallpaper.pixelrain.ProviderImpl       | Shawn Gilleland    | 1      | 1    | 25
 Hypno Clock      | hypno_clock.component        | hypno_clock.jpg   | com.yalin.wallpaper.hypnoclock.ProviderImpl    | Giraffe Playground    | 1      | 1    | 25
+Galaxy          | galaxy01.component            | galaxy01.jpg      | com.yalin.wallpaper.galaxy01.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Galaxy          | galaxy02.component            | galaxy02.jpg      | com.yalin.wallpaper.galaxy02.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Galaxy          | galaxy03.component            | galaxy03.jpg      | com.yalin.wallpaper.galaxy03.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Galaxy          | galaxy04.component            | galaxy04.jpg      | com.yalin.wallpaper.galaxy04.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Galaxy          | galaxy05.component            | galaxy05.jpg      | com.yalin.wallpaper.galaxy05.ProviderImpl       | Wasabi              | 1      | 1    | 25
