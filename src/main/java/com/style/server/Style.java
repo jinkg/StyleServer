@@ -39,7 +39,7 @@ public class Style {
                 LogUtil.F(TAG, "Invalid facetId..");
                 return "404";
             }
-            LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo());
+            LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo(), "Style");
 
             int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
             return getStyle(versionCode);
@@ -51,6 +51,8 @@ public class Style {
                 LogUtil.F(TAG, "Invalid facetId..");
                 return "404";
             }
+            LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo(), "LWA");
+
             int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
             return getAdvance(versionCode);
         });
@@ -76,7 +78,6 @@ public class Style {
         dataMap.put(DATA_KEY_ADVANCE_WALLPAPER, advanceItems);
 
         LogUtil.D(TAG, items.toString());
-        System.out.println("------------");
 
         return gson.toJson(dataMap);
     }
