@@ -53,3 +53,6 @@ Galaxy          | galaxy02.component            | galaxy02.jpg      | com.yalin.
 Galaxy          | galaxy03.component            | galaxy03.jpg      | com.yalin.wallpaper.galaxy03.ProviderImpl       | Wasabi              | 1      | 1    | 25
 Galaxy          | galaxy04.component            | galaxy04.jpg      | com.yalin.wallpaper.galaxy04.ProviderImpl       | Wasabi              | 1      | 1    | 25
 Galaxy          | galaxy05.component            | galaxy05.jpg      | com.yalin.wallpaper.galaxy05.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Wave Z          | wavez01.component             | wavez01.png       | com.yalin.wallpaper.wavez01.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Wave Z          | wavez02.component             | wavez02.png       | com.yalin.wallpaper.wavez02.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Wave Z          | wavez03.component             | wavez03.png       | com.yalin.wallpaper.wavez03.ProviderImpl       | Wasabi              | 1      | 1    | 25
