@@ -29,8 +29,8 @@ public class LogUtil {
         internalWriteLog(new File(DEFAULT_FILE_NAME), tag, msg);
     }
 
-    public static void F(String tag, String msg, DeviceInfo deviceInfo) {
-        File file = generateLogFile(deviceInfo.getModel(), deviceInfo.getAndroidId());
+    public static void F(String tag, String msg, DeviceInfo deviceInfo, String source) {
+        File file = generateLogFile(source + " - " + deviceInfo.getModel(), deviceInfo.getAndroidId());
         if (file != null) {
             internalWriteLog(file, tag, msg);
         }
