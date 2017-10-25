@@ -58,3 +58,4 @@ Wave Z          | wavez02.component             | wavez02.png       | com.yalin.
 Wave Z          | wavez03.component             | wavez03.png       | com.yalin.wallpaper.wavez03.ProviderImpl       | Wasabi              | 1      | 1    | 25
 Feather         | feather.component             | feather.png       | com.yalin.wallpaper.feather.ProviderImpl       | Wasabi              | 1      | 1    | 25
 Dandelion       | dandelion01.component         | dandelion01.jpg   | com.yalin.wallpaper.dandelion01.ProviderImpl       | Wasabi              | 1      | 1    | 25
+Tunnel          | tunnel3d01.component          | tunnel3d01.jpg    | com.yalin.wallpaper.tunnel3d01.ProviderImpl       | Next              | 1      | 1    | 25
