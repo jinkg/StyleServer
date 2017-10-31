@@ -56,6 +56,18 @@ public class Style {
             int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
             return getAdvance(versionCode);
         });
+
+        post("/style/style_wallpaper", (request, response) -> {
+            HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+            if (!ensureFacetIdValid(httpRequestBody)) {
+                LogUtil.F(TAG, "Invalid facetId..");
+                return "404";
+            }
+            LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo(), "LWA");
+
+            int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
+            return getStyleWallpaper(versionCode);
+        });
     }
 
     public static final String IP = "http://api.kinglloy.com:" + PORT;
@@ -94,6 +106,11 @@ public class Style {
         List<AdvanceWallpaperItem> advanceItems =
                 filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
         return gson.toJson(advanceItems);
+    }
+
+    private static String getStyleWallpaper(int clientVersion) {
+        List<WallpaperItem> items = WallpaperSourceParser.parseToList();
+        return gson.toJson(items);
     }
 
     private static List<AdvanceWallpaperItem> filterAdvanceItems(
