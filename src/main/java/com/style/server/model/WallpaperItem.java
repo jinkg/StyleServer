@@ -26,7 +26,7 @@ public class WallpaperItem {
         this.byline = byline;
         this.attribution = attribution;
 
-        this.imageUri = IP + File.separator + fileName;
+        this.imageUri = IP + "/" + fileName;
     }
 
     @Override
