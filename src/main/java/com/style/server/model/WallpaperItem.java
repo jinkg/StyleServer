@@ -18,6 +18,8 @@ public class WallpaperItem {
     public String attribution;
     public String checksum;
 
+    public long size;
+
     public WallpaperItem(String wallpaperId, String fileName, String title,
                          String byline, String attribution) {
         this.wallpaperId = wallpaperId;

@@ -4,7 +4,7 @@ package com.style.server.model;
  * jinyalin
  * on 2017/7/28.
  */
-public class AdvanceWallpaperItem {
+public class LiveWallpaperItem {
     public String wallpaperId;
     public String link;
     public String name;
@@ -18,4 +18,7 @@ public class AdvanceWallpaperItem {
     public boolean needAd = false;
 
     public String checkSum;
+
+    // v2.0 new
+    public long size;
 }

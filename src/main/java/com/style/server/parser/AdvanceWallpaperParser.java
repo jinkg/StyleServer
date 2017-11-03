@@ -1,8 +1,9 @@
 package com.style.server.parser;
 
 import com.style.server.ChecksumUtil;
-import com.style.server.model.AdvanceWallpaperItem;
+import com.style.server.model.LiveWallpaperItem;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -24,7 +25,7 @@ public class AdvanceWallpaperParser {
 
     private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
-    private static final List<AdvanceWallpaperItem> mCachedWallpaper = new ArrayList<>();
+    private static final List<LiveWallpaperItem> mCachedWallpaper = new ArrayList<>();
     private static long lastRefreshCacheTime;
 
     private static boolean maybeInvalidCache() {
@@ -32,15 +33,15 @@ public class AdvanceWallpaperParser {
         return currentTime - lastRefreshCacheTime > CACHE_VALID_TIMEOUT;
     }
 
-    public static synchronized List<AdvanceWallpaperItem> parseToList() {
+    public static synchronized List<LiveWallpaperItem> parseToList() {
         if (!maybeInvalidCache()) {
             return mCachedWallpaper;
         }
 
-        List<AdvanceWallpaperItem> wallpaperItems = new ArrayList<>();
+        List<LiveWallpaperItem> wallpaperItems = new ArrayList<>();
         ArrayList<String[]> itemsInfo = FileParser.parseFile(COMPONENT_SOURCE_FILE);
         for (String[] fields : itemsInfo) {
-            AdvanceWallpaperItem item = parseFields(fields);
+            LiveWallpaperItem item = parseFields(fields);
             if (item != null) {
                 wallpaperItems.add(item);
             }
@@ -54,9 +55,9 @@ public class AdvanceWallpaperParser {
         return wallpaperItems;
     }
 
-    private static AdvanceWallpaperItem parseFields(String[] wallpaperFields) {
+    private static LiveWallpaperItem parseFields(String[] wallpaperFields) {
         if (wallpaperFields != null && wallpaperFields.length == FIELD_COUNT) {
-            AdvanceWallpaperItem item = new AdvanceWallpaperItem();
+            LiveWallpaperItem item = new LiveWallpaperItem();
             String filename = wallpaperFields[1].trim();
             item.name = wallpaperFields[0].trim();
             item.downloadUrl = RES_HOST + COMPONENT_SOURCE_DIR + filename;
@@ -68,8 +69,10 @@ public class AdvanceWallpaperParser {
             item.wallpaperId = UUID.randomUUID().toString();
             item.link = "kinglloy.com";
             item.minVersion = Integer.parseInt(wallpaperFields[7].trim());
+            String componentFile = COMPONENT_ROOT_DIR + COMPONENT_SOURCE_DIR + filename;
+            item.size = new File(componentFile).length();
 
-            item.checkSum = ChecksumUtil.getChecksum(COMPONENT_ROOT_DIR + COMPONENT_SOURCE_DIR + filename);
+            item.checkSum = ChecksumUtil.getChecksum(componentFile);
 
             if (item.checkSum != null && item.checkSum.length() > 0) {
                 return item;

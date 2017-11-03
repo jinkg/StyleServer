@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.style.server.entity.HttpRequestBody;
 import com.style.server.log.LogUtil;
-import com.style.server.model.AdvanceWallpaperItem;
+import com.style.server.model.LiveWallpaperItem;
 import com.style.server.model.WallpaperItem;
 import com.style.server.parser.AdvanceWallpaperParser;
 import com.style.server.parser.WallpaperSourceParser;
@@ -84,7 +84,7 @@ public class Style {
         Collections.shuffle(items, new Random(seed));
         items = items.size() > MAX_WALLPAPER_RETURN ? items.subList(0, MAX_WALLPAPER_RETURN) : items;
 
-        List<AdvanceWallpaperItem> advanceItems =
+        List<LiveWallpaperItem> advanceItems =
                 filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
         dataMap.put(DATA_KEY_WALLPAPER, items);
         dataMap.put(DATA_KEY_ADVANCE_WALLPAPER, advanceItems);
@@ -103,7 +103,7 @@ public class Style {
     }
 
     private static String getAdvance(int clientVersion) {
-        List<AdvanceWallpaperItem> advanceItems =
+        List<LiveWallpaperItem> advanceItems =
                 filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
         return gson.toJson(advanceItems);
     }
@@ -113,10 +113,10 @@ public class Style {
         return gson.toJson(items);
     }
 
-    private static List<AdvanceWallpaperItem> filterAdvanceItems(
-            List<AdvanceWallpaperItem> advanceItems, int clientVersion) {
-        List<AdvanceWallpaperItem> filteredItems = new ArrayList<>();
-        for (AdvanceWallpaperItem item : advanceItems) {
+    private static List<LiveWallpaperItem> filterAdvanceItems(
+            List<LiveWallpaperItem> advanceItems, int clientVersion) {
+        List<LiveWallpaperItem> filteredItems = new ArrayList<>();
+        for (LiveWallpaperItem item : advanceItems) {
             if (item.minVersion <= clientVersion) {
                 filteredItems.add(item);
             }

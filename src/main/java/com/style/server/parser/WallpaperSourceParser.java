@@ -3,6 +3,7 @@ package com.style.server.parser;
 import com.style.server.ChecksumUtil;
 import com.style.server.model.WallpaperItem;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,7 +58,9 @@ public class WallpaperSourceParser {
                     wallpaperFields[1].trim(), wallpaperFields[2].trim(),
                     wallpaperFields[3].trim());
 
-            item.checksum = ChecksumUtil.getChecksum(WALLPAPER_SOURCE_DIR + item.fileName);
+            String filePath = WALLPAPER_SOURCE_DIR + item.fileName;
+            item.size = new File(filePath).length();
+            item.checksum = ChecksumUtil.getChecksum(filePath);
             if (item.checksum != null && item.checksum.length() > 0) {
                 return item;
             }
@@ -82,7 +85,9 @@ public class WallpaperSourceParser {
         };
         List<WallpaperItem> wallpaperItems = Arrays.asList(itemArray);
         for (WallpaperItem item : wallpaperItems) {
-            item.checksum = ChecksumUtil.getChecksum(WALLPAPER_DEMO_DIR + item.fileName);
+            String filePath = WALLPAPER_DEMO_DIR + item.fileName;
+            item.size = new File(filePath).length();
+            item.checksum = ChecksumUtil.getChecksum(filePath);
             if (item.checksum == null || item.checksum.length() == 0) {
                 wallpaperItems.remove(item);
             }
