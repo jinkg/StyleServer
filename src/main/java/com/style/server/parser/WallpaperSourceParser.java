@@ -17,7 +17,7 @@ public class WallpaperSourceParser {
     private static final String WALLPAPER_SOURCE_FILE = "./wallpaper.txt";
     private static final String WALLPAPER_SOURCE_DIR = "./wallpapers/";
     private static final String WALLPAPER_DEMO_DIR = "./wallpapers/demo/";
-    private static final int FIELD_COUNT = 4;
+    private static final int FIELD_COUNT = 5;
 
     private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
@@ -56,8 +56,9 @@ public class WallpaperSourceParser {
 
             WallpaperItem item = new WallpaperItem(UUID.randomUUID().toString(), wallpaperFields[0].trim(),
                     wallpaperFields[1].trim(), wallpaperFields[2].trim(),
-                    wallpaperFields[3].trim());
+                    wallpaperFields[4].trim());
 
+            item.pro = Integer.parseInt(wallpaperFields[3].trim()) == 1;
             String filePath = WALLPAPER_SOURCE_DIR + item.fileName;
             item.size = new File(filePath).length();
             item.checksum = ChecksumUtil.getChecksum(filePath);

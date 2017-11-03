@@ -1,44 +1,63 @@
-name            | file name             | icon name         | provider                                      | author                    | lazy   | ad   | version
-Rainbow         | rainbow.component     | rainbow.jpg       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin                     | 0      | 0    | 0
-Flower          | flower.component      | flower.jpg        | com.yalin.wallpaper.flower.ProviderImpl       | Harism                    | 0      | 0    | 0
-Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh                    | 0      | 0    | 0
-阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism                    | 0      | 0    | 0
-Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl    | Harism                    | 0      | 0    | 0
-Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism                    | 0      | 0    | 0
-条纹             | stripe.component       | stripe.jpg       | com.yalin.wallpaper.stripe.ProviderImpl       | Harism                    | 0      | 0    | 0
-Boids            | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl        | Marc DellaVolpe          | 0      | 0    | 0
-贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 0      | 1    | 0
-LoveBeat         | lovebeat.component    | lovebeat.jpg     | com.yalin.wallpaper.lovebeat.ProviderImpl     | Pham Trung Phuong          | 0      | 0   | 0
-超级六边形        | hexagon.component      | hexagon.jpg      | com.yalin.wallpaper.super_hexagon.ProviderImpl | Chris Sp.                | 0      | 0    | 0
-布               | cloth.component       | cloth.jpg         | com.yalin.wallpaper.cloth.ProviderImpl        | Rares Barbantan           | 1      | 0    | 25
-Tic Tac Toe     | tictactoe.component    | tictactoe.jpg    | com.yalin.wallpaper.tictactoe.ProviderImpl      | Yalin                   | 1      | 1     | 25
-旋转立方         | cube.component        | cube.jpg          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin                     | 1      | 0    | 25
-Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora          | 1      | 1    | 25
-Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 1      | 1    | 25
-沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 1    | 25
-Sun             | sun.component          | sun.jpg          | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 0    | 25
-DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl    | Cypher Cove             | 1      | 1    | 25
-三角形           | muhtraingle.component   | muhtraingle.jpg | com.yalin.wallpaper.muhtraingle.ProviderImpl    | Federico Dossena        | 1      | 1    | 25
-黄昏之风车   | nightfal_windmill.component  | windmill.jpg    | com.yalin.wallpaper.nightfal_windmill.ProviderImpl | Winterlight          | 1      | 1    | 25
-黄昏之乡村   | nightfal_rural.component     | rural.jpg       | com.yalin.wallpaper.nightfal_rural.ProviderImpl    | Winterlight          | 1      | 1    | 25
-Chroma          | chroma.component         | chroma.jpg       | com.yalin.wallpaper.chroma.ProviderImpl        | Nic Dahlquist           | 1      | 1    | 25
-Genesis          | genesis.component        | genesis.jpg       | com.yalin.wallpaper.genesis.ProviderImpl        | OBONO                | 1      | 0    | 25
-森林             | forest.component        | forest.jpg       | com.yalin.wallpaper.forest.ProviderImpl         | KaKa                    | 1      | 1    | 25
-小坏猫           | sneakycat.component      | sneakycat.jpg       | com.yalin.wallpaper.sneakycat.ProviderImpl    | Winterlight           | 1      | 1    | 25
-星系             | galaxy.component          | galaxy.jpg       | com.yalin.wallpaper.galaxy.ProviderImpl         | Maxelus                | 1      | 1    | 25
-雨               | rain3d.component          | rain3d.jpg       | com.yalin.wallpaper.rain3d.ProviderImpl         | Yalin                | 1      | 1    | 25
-星光              | starlight.component      | starlight.jpg       | com.yalin.wallpaper.starlight.ProviderImpl   | Winterlight           | 1      | 1    | 25
-瞌睡熊猫            | lazypanda.component      | lazypanda.jpg       | com.yalin.wallpaper.lazypanda.ProviderImpl   | Winterlight           | 1      | 1    | 25
-熊猫              | panda.component          | panda.jpg         | com.yalin.wallpaper.panda.ProviderImpl          | Winterlight           | 1      | 1    | 25
-秋               | autumn.component          | autumn.jpg         | com.yalin.wallpaper.autumn.ProviderImpl        | SubMad Group          | 1      | 1    | 25
-水               | water01.component          | water01.jpg         | com.yalin.wallpaper.water01.ProviderImpl     | Mosoyo                | 1      | 1    | 25
-水               | water02.component          | water02.jpg         | com.yalin.wallpaper.water02.ProviderImpl     | Mosoyo                | 1      | 1    | 25
-水               | water03.component          | water03.jpg         | com.yalin.wallpaper.water03.ProviderImpl     | Mosoyo                | 1      | 1    | 25
-六边形              | hexagon01.component      | hexagon01.jpg         | com.yalin.wallpaper.hexagon.ProviderImpl   | Yalin                | 1      | 1    | 25
-神秘光晕          | mystic_halo.component      | mystic_halo.jpg     | com.yalin.wallpaper.mystic_halo.ProviderImpl    | Zantetsuken          | 1      | 1    | 25
-模拟时钟          | analog_clock.component     | analog_clock.jpg    | com.yalin.wallpaper.analog_clock.ProviderImpl   | Style-7             | 1      | 1    | 25
-Electric Plasma  | electric_plasma.component  | electric_plasma.jpg | com.yalin.wallpaper.electric_plasma.ProviderImpl | Michael J. Palmer | 1      | 1    | 25
-Wolf             | animal_wolf.component      | animal_wolf.jpg     | com.yalin.wallpaper.animal3d_wolf.ProviderImpl  | Mosoyo             | 1      | 1    | 25
-Cat              | animal_cat.component       | animal_cat.jpg      | com.yalin.wallpaper.animal3d_cat.ProviderImpl   | Mosoyo             | 1      | 1    | 25
-Horse            | animal_horse.component     | animal_horse.jpg    | com.yalin.wallpaper.animal3d_horse.ProviderImpl | Mosoyo             | 1      | 1    | 25
-Eagle            | animal_eagle.component     | animal_eagle.jpg    | com.yalin.wallpaper.animal3d_eagle.ProviderImpl | Mosoyo             | 1      | 1    | 25
+name            | file name             | icon name         | provider                                      | author                    | lazy   | ad   |price  | pro       | version
+Rainbow         | rainbow.component     | rainbow.jpg       | com.yalin.wallpaper.rainbow.ProviderImpl      | Yalin                     | 0      | 0    | 0     | 0         | 0
+Flower          | flower.component      | flower.jpg        | com.yalin.wallpaper.flower.ProviderImpl       | Harism                    | 0      | 0    | 0     | 0         | 0
+Hacker          | hacker.component      | hacker.jpg        | com.yalin.wallpaper.hacker.ProviderImpl       | Gsingh                    | 0      | 0    | 0     | 0         | 0
+阴阳             | yinyang.component     | yinyang.jpg      | com.yalin.wallpaper.yinyang.ProviderImpl       | Harism                    | 0      | 0    | 0     | 0         | 0
+Meta balls       | metaballs.component  | metaballs.jpg     | com.yalin.wallpaper.metaballs.ProviderImpl    | Harism                    | 0      | 0    | 0     | 0         | 0
+Botz             | botz.component       | botz.jpg         | com.yalin.wallpaper.botz.ProviderImpl          | Harism                    | 0      | 0    | 0     | 0         | 0
+条纹             | stripe.component       | stripe.jpg       | com.yalin.wallpaper.stripe.ProviderImpl       | Harism                    | 0      | 0    | 0     | 0         | 0
+Boids            | boids.component       | boids.jpg         | com.yalin.wallpaper.boids.ProviderImpl        | Marc DellaVolpe          | 0      | 0    | 0     | 0         | 0
+贝塞尔时钟        | bezierclock.component | bezierclock.jpg   | com.yalin.wallpaper.bezierclock.ProviderImpl  | Oleg Godovykh             | 0      | 1    | 0     | 0         | 0
+LoveBeat         | lovebeat.component    | lovebeat.jpg     | com.yalin.wallpaper.lovebeat.ProviderImpl     | Pham Trung Phuong          | 0      | 0   | 0     | 0         | 0
+超级六边形        | hexagon.component      | hexagon.jpg      | com.yalin.wallpaper.super_hexagon.ProviderImpl | Chris Sp.                | 0      | 0    | 0     | 0         | 0
+布               | cloth.component       | cloth.jpg         | com.yalin.wallpaper.cloth.ProviderImpl        | Rares Barbantan           | 1      | 0     | 0     | 0        | 25
+Tic Tac Toe     | tictactoe.component    | tictactoe.jpg    | com.yalin.wallpaper.tictactoe.ProviderImpl      | Yalin                   | 1      | 1    | 0     | 0          | 25
+旋转立方         | cube.component        | cube.jpg          | com.yalin.wallpaper.cube.ProviderImpl         | Yalin                     | 1      | 0    | 0     | 0          | 25
+Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpaper.limitless.ProviderImpl    | Alexander Fedora          | 1      | 1    | 0     | 0          | 25
+Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 1      | 1    | 0     | 0          | 25
+沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 1    | 0      | 0         | 25
+Sun             | sun.component          | sun.jpg          | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 0    | 0     | 0          | 25
+DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl    | Cypher Cove             | 1      | 1    | 0     | 0          | 25
+三角形           | muhtraingle.component   | muhtraingle.jpg | com.yalin.wallpaper.muhtraingle.ProviderImpl    | Federico Dossena        | 1      | 1    | 0     | 0          | 25
+黄昏之风车   | nightfal_windmill.component  | windmill.jpg    | com.yalin.wallpaper.nightfal_windmill.ProviderImpl | Winterlight          | 1      | 1    | 0     | 0          | 25
+黄昏之乡村   | nightfal_rural.component     | rural.jpg       | com.yalin.wallpaper.nightfal_rural.ProviderImpl    | Winterlight          | 1      | 1    | 0     | 0          | 25
+Chroma          | chroma.component         | chroma.jpg       | com.yalin.wallpaper.chroma.ProviderImpl        | Nic Dahlquist           | 1      | 1    | 0     | 0         | 25
+Genesis          | genesis.component        | genesis.jpg       | com.yalin.wallpaper.genesis.ProviderImpl        | OBONO                | 1      | 0     | 0     | 0        | 25
+森林             | forest.component        | forest.jpg       | com.yalin.wallpaper.forest.ProviderImpl         | KaKa                    | 1      | 1    | 0     | 0         | 25
+小坏猫           | sneakycat.component      | sneakycat.jpg       | com.yalin.wallpaper.sneakycat.ProviderImpl    | Winterlight           | 1      | 1     | 0     | 0        | 25
+星系             | galaxy.component          | galaxy.jpg       | com.yalin.wallpaper.galaxy.ProviderImpl         | Maxelus                | 1      | 1    | 0     | 1        | 25
+雨               | rain3d.component          | rain3d.jpg       | com.yalin.wallpaper.rain3d.ProviderImpl         | Yalin                | 1      | 1     | 0     | 0        | 25
+星光              | starlight.component      | starlight.jpg       | com.yalin.wallpaper.starlight.ProviderImpl   | Winterlight           | 1      | 1     | 0     | 0        | 25
+瞌睡熊猫            | lazypanda.component      | lazypanda.jpg       | com.yalin.wallpaper.lazypanda.ProviderImpl   | Winterlight           | 1      | 1    | 0     | 0       | 25
+熊猫              | panda.component          | panda.jpg         | com.yalin.wallpaper.panda.ProviderImpl          | Winterlight           | 1      | 1     | 0     | 0       | 25
+秋               | autumn.component          | autumn.jpg         | com.yalin.wallpaper.autumn.ProviderImpl        | SubMad Group          | 1      | 1    | 0      | 0      | 25
+水               | water01.component          | water01.jpg         | com.yalin.wallpaper.water01.ProviderImpl     | Mosoyo                | 1      | 1    | 0     | 0       | 25
+水               | water02.component          | water02.jpg         | com.yalin.wallpaper.water02.ProviderImpl     | Mosoyo                | 1      | 1    | 0     | 0       | 25
+水               | water03.component          | water03.jpg         | com.yalin.wallpaper.water03.ProviderImpl     | Mosoyo                | 1      | 1    | 0     | 0       | 25
+六边形              | hexagon01.component      | hexagon01.jpg         | com.yalin.wallpaper.hexagon.ProviderImpl   | Yalin                | 1      | 1     | 0     | 0       | 25
+神秘光晕          | mystic_halo.component      | mystic_halo.jpg  | com.yalin.wallpaper.mystic_halo.ProviderImpl    | Zantetsuken          | 1      | 1     | 0      | 0      | 25
+模拟时钟          | analog_clock.component     | analog_clock.jpg  | com.yalin.wallpaper.analog_clock.ProviderImpl   | Style-7             | 1      | 1     | 0      | 0      | 25
+Electric Plasma  | electric_plasma.component  | electric_plasma.jpg | com.yalin.wallpaper.electric_plasma.ProviderImpl | Michael J. Palmer | 1      | 1     | 0     | 0      | 25
+Wolf             | animal_wolf.component      | animal_wolf.jpg     | com.yalin.wallpaper.animal3d_wolf.ProviderImpl  | Mosoyo             | 1      | 1     | 0      | 0     | 25
+Cat              | animal_cat.component       | animal_cat.jpg      | com.yalin.wallpaper.animal3d_cat.ProviderImpl   | Mosoyo             | 1      | 1     | 0      | 0     | 25
+Horse            | animal_horse.component     | animal_horse.jpg    | com.yalin.wallpaper.animal3d_horse.ProviderImpl | Mosoyo             | 1      | 1     | 0      | 0     | 25
+Eagle            | animal_eagle.component     | animal_eagle.jpg    | com.yalin.wallpaper.animal3d_eagle.ProviderImpl | Mosoyo             | 1      | 1     | 0      | 0     | 25
+六边形-火         | hexshader_fire.component   | hexshader_fire.jpg  | com.yalin.wallpaper.hexshader_fire.ProviderImpl | Sergey Konyukhov   | 1      | 1     | 0      | 0     | 25
+六边形-星云       | hexshader_galaxy.component  | hexshader_galaxy.jpg  | com.yalin.wallpaper.hexshader_galaxy.ProviderImpl | Sergey Konyukhov   | 1      | 1    | 0      | 0    | 25
+六边形-Kalizyl    | hexshader_kalizyl.component | hexshader_kalizyl.jpg | com.yalin.wallpaper.hexshader_kalizyl.ProviderImpl | Sergey Konyukhov   | 1      | 1     | 0     | 0    | 25
+六边形-彩虹       | hexshader_rainbow.component | hexshader_rainbow.jpg | com.yalin.wallpaper.hexshader_rainbow.ProviderImpl | Sergey Konyukhov   | 1      | 1     | 0     | 0    | 25
+Pixel Rain        | pixelrain.component        | pixelrain.jpg        | com.yalin.wallpaper.pixelrain.ProviderImpl       | Shawn Gilleland    | 1      | 1     | 0      | 0   | 25
+Hypno Clock      | hypno_clock.component        | hypno_clock.jpg   | com.yalin.wallpaper.hypnoclock.ProviderImpl    | Giraffe Playground    | 1      | 1     | 0     | 0    | 25
+Galaxy          | galaxy01.component            | galaxy01.jpg      | com.yalin.wallpaper.galaxy01.ProviderImpl       | Wasabi              | 1      | 1     | 0      | 1    | 25
+Galaxy          | galaxy02.component            | galaxy02.jpg      | com.yalin.wallpaper.galaxy02.ProviderImpl       | Wasabi              | 1      | 1     | 0      | 1    | 25
+Galaxy          | galaxy03.component            | galaxy03.jpg      | com.yalin.wallpaper.galaxy03.ProviderImpl       | Wasabi              | 1      | 1     | 0.5    | 1    | 30
+Galaxy          | galaxy04.component            | galaxy04.jpg      | com.yalin.wallpaper.galaxy04.ProviderImpl       | Wasabi              | 1      | 1     | 0      | 1    | 25
+Galaxy          | galaxy05.component            | galaxy05.jpg      | com.yalin.wallpaper.galaxy05.ProviderImpl       | Wasabi              | 1      | 1     | 0      | 1    | 25
+Wave Z          | wavez01.component             | wavez01.png       | com.yalin.wallpaper.wavez01.ProviderImpl       | Wasabi               | 1      | 1     | 0.5      | 0   | 30
+Wave Z          | wavez02.component             | wavez02.png       | com.yalin.wallpaper.wavez02.ProviderImpl       | Wasabi               | 1      | 1     | 0        | 0  | 25
+Wave Z          | wavez03.component             | wavez03.png       | com.yalin.wallpaper.wavez03.ProviderImpl       | Wasabi               | 1      | 1     | 0        | 0   | 25
+Feather         | feather.component             | feather.png       | com.yalin.wallpaper.feather.ProviderImpl       | Wasabi               | 1      | 1     | 0.5      | 1   | 30
+Dandelion       | dandelion01.component         | dandelion01.jpg   | com.yalin.wallpaper.dandelion01.ProviderImpl       | Wasabi           | 1      | 1     | 0       | 0    | 25
+Tunnel          | tunnel3d01.component          | tunnel3d01.jpg    | com.yalin.wallpaper.tunnel3d01.ProviderImpl       | Next              | 1      | 1     | 0.5      | 1   | 30
+初音             | miku.component                 | miku.jpg          | com.yalin.wallpaper.miku.ProviderImpl       | YaLin                  | 1      | 1     | 0       | 0   | 25
+Pond             | koi_pond.component            | koi_pond.jpg          | com.yalin.wallpaper.koipond.ProviderImpl       | YaLin           | 1       | 1     | 1       | 1   | 30

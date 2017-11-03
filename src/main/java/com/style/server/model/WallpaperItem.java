@@ -1,7 +1,5 @@
 package com.style.server.model;
 
-import java.io.File;
-
 import static com.style.server.Style.IP;
 
 /**
@@ -19,6 +17,7 @@ public class WallpaperItem {
     public String checksum;
 
     public long size;
+    public boolean pro;
 
     public WallpaperItem(String wallpaperId, String fileName, String title,
                          String byline, String attribution) {

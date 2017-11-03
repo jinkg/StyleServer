@@ -54,7 +54,7 @@ public class Style {
             LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo(), "LWA");
 
             int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
-            return getAdvance(versionCode);
+            return getLiveWallpapers(versionCode);
         });
 
         post("/style/style_wallpaper", (request, response) -> {
@@ -66,7 +66,7 @@ public class Style {
             LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo(), "LWA");
 
             int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
-            return getStyleWallpaper(versionCode);
+            return getStyleWallpapers(versionCode);
         });
     }
 
@@ -102,13 +102,13 @@ public class Style {
         return true;
     }
 
-    private static String getAdvance(int clientVersion) {
+    public static String getLiveWallpapers(int clientVersion) {
         List<LiveWallpaperItem> advanceItems =
                 filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
         return gson.toJson(advanceItems);
     }
 
-    private static String getStyleWallpaper(int clientVersion) {
+    public static String getStyleWallpapers(int clientVersion) {
         List<WallpaperItem> items = WallpaperSourceParser.parseToList();
         return gson.toJson(items);
     }

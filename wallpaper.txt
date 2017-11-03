@@ -1,4 +1,4 @@
-file name                                   | wallpaper name                         | author & date                 | tag
-bmw-art-car-1.jpg                               |BMW Art Car                                     |Jeff Koons, 2010                                |kinglloy.com
-lady-xuanwen.jpg                                |宣文君授经图                                      |陈洪绶, 1638                                     |kinglloy.com
-a-colored-version-of-the-big-wave.jpg           |巨浪                                             |葛饰北斋                              |kinglloy.com
+file name                                   | wallpaper name                         | author & date                   | pro     | tag
+acrobat.jpg                                 |Acrobat                                 |Jeff Koons                       | 1       | kinglloy.com
+big-beak-and-mirabilis.jpg                  |Grosbeak and mirabilis                  |葛饰北斋, 1834                    | 0       | kinglloy.com
+chess-players-iii-1924.jpg                  |Chess Players III                       |Willi Baumeister, 1924           | 0       | kinglloy.com

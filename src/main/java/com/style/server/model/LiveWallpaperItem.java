@@ -21,4 +21,6 @@ public class LiveWallpaperItem {
 
     // v2.0 new
     public long size;
+    public float price;
+    public boolean pro;
 }
