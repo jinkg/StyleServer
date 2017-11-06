@@ -9,6 +9,9 @@ public class Test {
         String live = Style.getLiveWallpapers(25);
         String style = Style.getStyleWallpapers(25);
 
+        String lwa = Style.getLWA(25);
+        String style1 = Style.getStyle(25);
+
         System.out.println("-");
     }
 }

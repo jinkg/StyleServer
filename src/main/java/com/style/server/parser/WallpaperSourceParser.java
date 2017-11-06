@@ -1,13 +1,10 @@
 package com.style.server.parser;
 
 import com.style.server.ChecksumUtil;
-import com.style.server.model.WallpaperItem;
+import com.style.server.model.StyleWallpaperItem;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * jinyalin
@@ -21,40 +18,50 @@ public class WallpaperSourceParser {
 
     private static final long CACHE_VALID_TIMEOUT = 2 * 60 * 60 * 1000L;
 
-    private static final List<WallpaperItem> mCachedWallpaper = new ArrayList<>();
-    private static long lastRefreshCacheTime;
+    private static Map<String, List<StyleWallpaperItem>> mCaches = new HashMap<>();
+    private static Map<String, Long> mCachesRefreshTime = new HashMap<>();
 
-    private static boolean maybeInvalidCache() {
+    private static boolean maybeInvalidCache(String sourceFile) {
+        long lastRefreshCacheTime = mCachesRefreshTime.containsKey(sourceFile) ? mCachesRefreshTime.get(sourceFile) : 0;
         long currentTime = System.currentTimeMillis();
         return currentTime - lastRefreshCacheTime > CACHE_VALID_TIMEOUT;
     }
 
-    public static synchronized List<WallpaperItem> parseToList() {
-        if (!maybeInvalidCache()) {
-            return mCachedWallpaper;
-        }
-
-        List<WallpaperItem> wallpaperItems = new ArrayList<>();
-        ArrayList<String[]> itemFileds = FileParser.parseFile(WALLPAPER_SOURCE_FILE);
-        for (String[] fields : itemFileds) {
-            WallpaperItem item = parseFields(fields);
-            if (item != null) {
-                wallpaperItems.add(item);
-            }
-        }
-        if (wallpaperItems.size() == 0) {
-            wallpaperItems = getDemoWallpapers();
-        }
-        mCachedWallpaper.clear();
-        mCachedWallpaper.addAll(wallpaperItems);
-        lastRefreshCacheTime = System.currentTimeMillis();
-        return wallpaperItems;
+    public static synchronized List<StyleWallpaperItem> parseToList() {
+        return parseToList(WALLPAPER_SOURCE_FILE);
     }
 
-    private static WallpaperItem parseFields(String[] wallpaperFields) {
+    public static synchronized List<StyleWallpaperItem> parseToList(String sourceFile) {
+        List<StyleWallpaperItem> cachedWallpaper = mCaches.get(sourceFile);
+        if (cachedWallpaper == null) {
+            cachedWallpaper = new ArrayList<>();
+        }
+        if (!maybeInvalidCache(sourceFile)) {
+            return cachedWallpaper;
+        }
+
+        List<StyleWallpaperItem> styleWallpaperItems = new ArrayList<>();
+        ArrayList<String[]> itemFields = FileParser.parseFile(sourceFile);
+        for (String[] fields : itemFields) {
+            StyleWallpaperItem item = parseFields(fields);
+            if (item != null) {
+                styleWallpaperItems.add(item);
+            }
+        }
+        if (styleWallpaperItems.size() == 0) {
+            styleWallpaperItems = getDemoWallpapers();
+        }
+        cachedWallpaper.clear();
+        cachedWallpaper.addAll(styleWallpaperItems);
+        mCaches.put(sourceFile, cachedWallpaper);
+        mCachesRefreshTime.put(sourceFile, System.currentTimeMillis());
+        return styleWallpaperItems;
+    }
+
+    private static StyleWallpaperItem parseFields(String[] wallpaperFields) {
         if (wallpaperFields != null && wallpaperFields.length == FIELD_COUNT) {
 
-            WallpaperItem item = new WallpaperItem(UUID.randomUUID().toString(), wallpaperFields[0].trim(),
+            StyleWallpaperItem item = new StyleWallpaperItem(UUID.randomUUID().toString(), wallpaperFields[0].trim(),
                     wallpaperFields[1].trim(), wallpaperFields[2].trim(),
                     wallpaperFields[4].trim());
 
@@ -69,31 +76,31 @@ public class WallpaperSourceParser {
         return null;
     }
 
-    private static List<WallpaperItem> getDemoWallpapers() {
-        WallpaperItem[] itemArray = new WallpaperItem[]{
-                new WallpaperItem(UUID.randomUUID().toString(),
+    private static List<StyleWallpaperItem> getDemoWallpapers() {
+        StyleWallpaperItem[] itemArray = new StyleWallpaperItem[]{
+                new StyleWallpaperItem(UUID.randomUUID().toString(),
                         "series-i-no-3.jpg",
                         "Series I, No. 3", "Georgia O'Keeffe, 1918", "kinglloy.com"),
-                new WallpaperItem(UUID.randomUUID().toString(),
+                new StyleWallpaperItem(UUID.randomUUID().toString(),
                         "blue-02.jpg",
                         "Blue-02", "Georgia O'Keeffe, 1916", "kinglloy.com"),
-                new WallpaperItem(UUID.randomUUID().toString(),
+                new StyleWallpaperItem(UUID.randomUUID().toString(),
                         "blue-morning-glories.jpg",
                         "Blue Morning Glories", "Georgia O'Keeffe, 1935", "kinglloy.com"),
-                new WallpaperItem(UUID.randomUUID().toString(),
+                new StyleWallpaperItem(UUID.randomUUID().toString(),
                         "bleeding-heart.jpg",
                         "Bleeding Heart", "Georgia O'Keeffe, 1932", "kinglloy.com")
         };
-        List<WallpaperItem> wallpaperItems = Arrays.asList(itemArray);
-        for (WallpaperItem item : wallpaperItems) {
+        List<StyleWallpaperItem> styleWallpaperItems = Arrays.asList(itemArray);
+        for (StyleWallpaperItem item : styleWallpaperItems) {
             String filePath = WALLPAPER_DEMO_DIR + item.fileName;
             item.size = new File(filePath).length();
             item.checksum = ChecksumUtil.getChecksum(filePath);
             if (item.checksum == null || item.checksum.length() == 0) {
-                wallpaperItems.remove(item);
+                styleWallpaperItems.remove(item);
             }
         }
 
-        return wallpaperItems;
+        return styleWallpaperItems;
     }
 }

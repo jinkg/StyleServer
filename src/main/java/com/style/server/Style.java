@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.style.server.entity.HttpRequestBody;
 import com.style.server.log.LogUtil;
 import com.style.server.model.LiveWallpaperItem;
-import com.style.server.model.WallpaperItem;
+import com.style.server.model.StyleWallpaperItem;
 import com.style.server.parser.AdvanceWallpaperParser;
 import com.style.server.parser.WallpaperSourceParser;
 
@@ -68,6 +68,18 @@ public class Style {
             int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
             return getStyleWallpapers(versionCode);
         });
+
+        post("/style/lwa", (request, response) -> {
+            HttpRequestBody httpRequestBody = gson.fromJson(request.body(), HttpRequestBody.class);
+            if (!ensureFacetIdValid(httpRequestBody)) {
+                LogUtil.F(TAG, "Invalid facetId..");
+                return "404";
+            }
+            LogUtil.F(TAG, httpRequestBody.toString(), httpRequestBody.getDeviceInfo(), "LWA");
+
+            int versionCode = httpRequestBody.getDeviceInfo().getVersionCode();
+            return getLWA(versionCode);
+        });
     }
 
     public static final String IP = "http://api.kinglloy.com:" + PORT;
@@ -75,10 +87,13 @@ public class Style {
     private static final String DATA_KEY_WALLPAPER = "wallpapers";
     private static final String DATA_KEY_ADVANCE_WALLPAPER = "advance_wallpapers";
 
-    private static String getStyle(int clientVersion) {
+    private static final String DATA_KEY_LIVE_WALLPAPER = "live_wallpapers";
+    private static final String DATA_KEY_STYLE_WALLPAPER = "style_wallpapers";
+
+    static String getStyle(int clientVersion) {
         Map<String, Object> dataMap = new HashMap<>();
 
-        List<WallpaperItem> items = WallpaperSourceParser.parseToList();
+        List<StyleWallpaperItem> items = WallpaperSourceParser.parseToList();
 
         long seed = System.nanoTime();
         Collections.shuffle(items, new Random(seed));
@@ -94,6 +109,22 @@ public class Style {
         return gson.toJson(dataMap);
     }
 
+    private static String LWAStyleSourceFile = "./style_wallpapers.txt";
+
+    static String getLWA(int clientVersion) {
+        Map<String, Object> dataMap = new HashMap<>();
+
+        List<StyleWallpaperItem> styleItems = WallpaperSourceParser.parseToList(LWAStyleSourceFile);
+        List<LiveWallpaperItem> liveItems =
+                filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
+        dataMap.put(DATA_KEY_LIVE_WALLPAPER, liveItems);
+        dataMap.put(DATA_KEY_STYLE_WALLPAPER, styleItems);
+
+        LogUtil.D(TAG, styleItems.toString());
+
+        return gson.toJson(dataMap);
+    }
+
     private static boolean ensureFacetIdValid(HttpRequestBody requestBody) {
         if (!requestBody.isValidBody()) {
             LogUtil.D(TAG, "Invalid facetId : " + requestBody.getFacetId());
@@ -102,14 +133,14 @@ public class Style {
         return true;
     }
 
-    public static String getLiveWallpapers(int clientVersion) {
+    static String getLiveWallpapers(int clientVersion) {
         List<LiveWallpaperItem> advanceItems =
                 filterAdvanceItems(AdvanceWallpaperParser.parseToList(), clientVersion);
         return gson.toJson(advanceItems);
     }
 
-    public static String getStyleWallpapers(int clientVersion) {
-        List<WallpaperItem> items = WallpaperSourceParser.parseToList();
+    static String getStyleWallpapers(int clientVersion) {
+        List<StyleWallpaperItem> items = WallpaperSourceParser.parseToList(LWAStyleSourceFile);
         return gson.toJson(items);
     }
 
