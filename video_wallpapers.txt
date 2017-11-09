@@ -1,9 +1,13 @@
 wallpaper name          | file name              | icon name                 | author & date             | pro       | tag
 Girl                    | girl01.mp4             | girl01.jpg                | YaLin                     | 0         | kinglloy.com
-MiKu                    | miku01.mp4             | miku01.jpg                | YaLin                     | 1         | kinglloy.com
 荷花                    | shuimo_hehua.mp4        | shuimo_hehua.jpg          | YaLin                     | 0         | kinglloy.com
 鬼刀                    | guidao.mp4              | guidao.jpg                | YaLin                     | 0         | kinglloy.com
 海                      | sea.mp4                 | sea.jpg                   | YaLin                     | 0         | kinglloy.com
 唯美                     | weimei01.mp4           | weimei01.jpg              | YaLin                     | 0         | kinglloy.com
 唯美                     | weimei02.mp4           | weimei02.jpg              | YaLin                     | 0         | kinglloy.com
 Windows                 | windows.mp4             | windows.jpg              | YaLin                     | 1         | kinglloy.com
+MiKu                    | miku01.mp4             | miku01.jpg                | YaLin                     | 1         | kinglloy.com
+李白                    | libai.mp4             | libai.jpg                   | YaLin                     | 0         | kinglloy.com
+雅研                    | yayan.mp4             | yayan.jpg                   | YaLin                     | 0         | kinglloy.com
+萌                      | meng01.mp4            | meng01.jpg                  | YaLin                     | 1         | kinglloy.com
+Girl                    | girl02.mp4            | girl02.jpg                  | YaLin                     | 1         | kinglloy.com
