@@ -1,3 +1,4 @@
 wallpaper name          | file name              | icon name                 | author & date             | pro       | tag
-MiKu                    | miku01.mp4             | miku01.jpg                | YaLin                     | 1         | kinglloy.com
 Girl                    | girl01.mp4             | girl01.jpg                | YaLin                     | 0         | kinglloy.com
+MiKu                    | miku01.mp4             | miku01.jpg                | YaLin                     | 1         | kinglloy.com
+荷花                    | shuimo_hehua.mp4        | shuimo_hehua.jpg          | YaLin                     | 0         | kinglloy.com
