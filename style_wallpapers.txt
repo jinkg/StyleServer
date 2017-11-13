@@ -12,5 +12,6 @@ mares-and-foals.jpg                     | Mares And Foals In A River Landscape  
 bamburgh-castle-northumberland.jpg      | Bamburgh Castle, Northumberland       | Thomas Girtin, 1799           | 0       | kinglloy.com
 a-passing-glance-1900.jpg               | A Passing Glance                      | Thomas Pollock Anshutz, 1900  | 0       | kinglloy.com
 indonesian-landscape.jpg                | Indonesian Landscape                  | Abdullah Suriosubroto         | 0       | kinglloy.com
-old-pine-tree-and-peacock-1761.jpg      |孔雀凤凰图                               |伊藤若冲, 1761            | 1       | kinglloy.com
-jakuchu_phoenix.jpg                     |孔雀凤凰图                               |伊藤若冲, 1761            | 1       | kinglloy.com
+old-pine-tree-and-peacock-1761.jpg      | 孔雀凤凰图                              | 伊藤若冲, 1761                 | 1       | kinglloy.com
+jakuchu_phoenix.jpg                     | 孔雀凤凰图                              | 伊藤若冲, 1761                 | 1       | kinglloy.com
+The_GAN_Zoo.jpg                         | 无题                                   | Yalin                         | 1       | kinglloy.com
