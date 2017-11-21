@@ -16,3 +16,7 @@ MiKu                    | miku02.mp4            | miku02.jpg                  | 
 雨                      | rain01.mp4             | rain01.jpg                 | YaLin                     | 0         | kinglloy.com
 Green Stone             | green_stone.mp4        | green_stone.jpg            | YaLin                     | 0         | kinglloy.com
 Code 3D                 | code_3d.mp4           | code_3d.jpg                 | YaLin                     | 0         | kinglloy.com
+以津真天                 | girl03.mp4            | girl03.jpg                 | YaLin                     | 1         | kinglloy.com
+三国                    | sango.mp4             | sango.jpg                    | YaLin                     | 1         | kinglloy.com
+MiKu                    | miku03.mp4             | miku03.jpg                | YaLin                     | 0         | kinglloy.com
+束缚                    | girl04.mp4            | girl04.jpg                 | YaLin                     | 1         | kinglloy.com
