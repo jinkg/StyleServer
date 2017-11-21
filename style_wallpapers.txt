@@ -15,3 +15,6 @@ indonesian-landscape.jpg                | Indonesian Landscape                  
 old-pine-tree-and-peacock-1761.jpg      | 孔雀凤凰图                              | 伊藤若冲, 1761                 | 1       | kinglloy.com
 jakuchu_phoenix.jpg                     | 孔雀凤凰图                              | 伊藤若冲, 1761                 | 1       | kinglloy.com
 The_GAN_Zoo.jpg                         | 无题                                   | Yalin                         | 1       | kinglloy.com
+magnolia-and-erect-rock.jpg             | 玉堂柱石圖                              | 陈洪绶                        | 0       | kinglloy.com
+golden-evening-southwest-texas.jpg      | Golden Evening, Southwest Texas       | Robert Julian Onderdonk       | 1       | kinglloy.com
+a-colored-version-of-the-big-wave.jpg   |巨浪                                    |葛饰北斋                        | 1       | kinglloy.com
