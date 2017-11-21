@@ -63,3 +63,4 @@ Tunnel          | tunnel3d01.component          | tunnel3d01.jpg    | com.yalin.
 Pond             | koi_pond.component            | koi_pond.jpg          | com.yalin.wallpaper.koipond.ProviderImpl       | YaLin           | 1       | 1     | 1       | 1   | 30
 Matrix          | matrix_3d.component            | matrix_3d.jpg     | com.kinglloy.matrix.ProviderImpl                  | YaLin           | 1       | 1     | 1       | 0   | 25
 Butterfly       | butterfly_3d.component        | butterfly_3d.jpg   | com.kinglloy.wallpaper.butterfly_3d.ProviderImpl  | YaLin           | 1       | 1     | 1       | 0   | 25
+激光时钟         | ray_clock.component            | ray_clock.jpg      | com.kinglloy.wallpaper.clock.ray.ProviderImpl    | YaLin           | 1       | 1     | 1       | 0   | 25
