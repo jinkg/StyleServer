@@ -7,6 +7,7 @@ import static com.style.server.Style.IP;
  * 2017/1/3.
  */
 public class StyleWallpaperItem {
+    private static final String IMAGE_DIR = "style/";
     public String wallpaperId;
     public String imageUri;
 
@@ -27,7 +28,7 @@ public class StyleWallpaperItem {
         this.byline = byline;
         this.attribution = attribution;
 
-        this.imageUri = IP + "/" + fileName;
+        this.imageUri = IP + "/" + IMAGE_DIR + fileName;
     }
 
     @Override
