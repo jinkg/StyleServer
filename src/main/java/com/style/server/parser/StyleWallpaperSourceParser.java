@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class StyleWallpaperSourceParser {
     private static final String WALLPAPER_SOURCE_FILE = "./wallpaper.txt";
-    private static final String WALLPAPER_SOURCE_DIR = "./wallpapers/";
+    private static final String WALLPAPER_SOURCE_DIR = "./wallpapers/style/";
     private static final String WALLPAPER_DEMO_DIR = "./wallpapers/demo/";
     private static final int FIELD_COUNT = 5;
 
