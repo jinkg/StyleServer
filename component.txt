@@ -17,7 +17,6 @@ Limitless       | limitless.component   | limitless.jpg     | com.yalin.wallpape
 Blurred Lines   | blurred_line.component| blurred_line.jpg  | com.yalin.wallpaper.blurred_line.ProviderImpl | Alexander Fedora          | 1      | 1    | 0     | 0          | 25
 沙丁鱼            | shark.component      | shark.jpg         | com.yalin.wallpaper.shark.ProviderImpl         | Atsushi Konno            | 1      | 1    | 0      | 0         | 25
 Sun             | sun.component          | sun.jpg          | com.yalin.wallpaper.sun.ProviderImpl          | Alexander Fedora          | 1      | 0    | 0     | 0          | 25
-DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl    | Cypher Cove             | 1      | 1    | 0     | 1          | 25
 三角形           | muhtraingle.component   | muhtraingle.jpg | com.yalin.wallpaper.muhtraingle.ProviderImpl    | Federico Dossena        | 1      | 1    | 0     | 0          | 25
 黄昏之风车   | nightfal_windmill.component  | windmill.jpg    | com.yalin.wallpaper.nightfal_windmill.ProviderImpl | Winterlight          | 1      | 1    | 0     | 0          | 25
 黄昏之乡村   | nightfal_rural.component     | rural.jpg       | com.yalin.wallpaper.nightfal_rural.ProviderImpl    | Winterlight          | 1      | 1    | 0     | 0          | 25
@@ -25,7 +24,6 @@ Chroma          | chroma.component         | chroma.jpg       | com.yalin.wallpa
 Genesis          | genesis.component        | genesis.jpg       | com.yalin.wallpaper.genesis.ProviderImpl        | OBONO                | 1      | 0     | 0     | 0        | 25
 森林             | forest.component        | forest.jpg       | com.yalin.wallpaper.forest.ProviderImpl         | KaKa                    | 1      | 1    | 0     | 1         | 25
 小坏猫           | sneakycat.component      | sneakycat.jpg       | com.yalin.wallpaper.sneakycat.ProviderImpl    | Winterlight           | 1      | 1     | 0     | 0        | 25
-星系             | galaxy.component          | galaxy.jpg       | com.yalin.wallpaper.galaxy.ProviderImpl         | Maxelus                | 1      | 1    | 0     | 1        | 25
 雨               | rain3d.component          | rain3d.jpg       | com.yalin.wallpaper.rain3d.ProviderImpl         | Yalin                | 1      | 1     | 0     | 0        | 25
 星光              | starlight.component      | starlight.jpg       | com.yalin.wallpaper.starlight.ProviderImpl   | Winterlight           | 1      | 1     | 0     | 0        | 25
 瞌睡熊猫            | lazypanda.component      | lazypanda.jpg       | com.yalin.wallpaper.lazypanda.ProviderImpl   | Winterlight           | 1      | 1    | 0     | 0       | 25
@@ -59,10 +57,12 @@ Wave Z          | wavez03.component             | wavez03.png       | com.yalin.
 Feather         | feather.component             | feather.png       | com.yalin.wallpaper.feather.ProviderImpl       | Wasabi               | 1      | 1     | 0.5      | 1   | 30
 Dandelion       | dandelion01.component         | dandelion01.jpg   | com.yalin.wallpaper.dandelion01.ProviderImpl       | Wasabi           | 1      | 1     | 0       | 1    | 25
 Tunnel          | tunnel3d01.component          | tunnel3d01.jpg    | com.yalin.wallpaper.tunnel3d01.ProviderImpl       | Next              | 1      | 1     | 0.5      | 1   | 30
+DNA             | doublehelix.component   | doublehelix.jpg | com.yalin.wallpaper.doublehelix.ProviderImpl              | Cypher Cove       | 1      | 1    | 0     | 1       | 25
 初音             | miku.component                 | miku.jpg          | com.yalin.wallpaper.miku.ProviderImpl       | YaLin                  | 1      | 1     | 0       | 0   | 25
 Matrix          | matrix_3d.component            | matrix_3d.jpg     | com.kinglloy.matrix.ProviderImpl                  | YaLin           | 1       | 1     | 1       | 0   | 25
 Butterfly       | butterfly_3d.component        | butterfly_3d.jpg   | com.kinglloy.wallpaper.butterfly_3d.ProviderImpl  | YaLin           | 1       | 1     | 1       | 0   | 25
 激光时钟         | ray_clock.component            | ray_clock.jpg      | com.kinglloy.wallpaper.clock.ray.ProviderImpl    | YaLin           | 1       | 1     | 1       | 0   | 25
+星系             | galaxy.component               | galaxy.jpg       | com.yalin.wallpaper.galaxy.ProviderImpl         | Maxelus             | 1      | 1    | 0     | 1        | 25
 Pond             | koi_pond_new.component         | koi_pond.jpg   | com.yalin.wallpaper.koipond.ProviderImpl           | YaLin             | 1       | 1     | 1       | 1   | 35
 地球3D           | erath3d.component             | earth3d.jpg        | com.kinglloy.wallpaper.earth_3d.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 35
 金星3D           | venus3s.component             | venus3d.jpg        | com.kinglloy.wallpaper.venus3d.ProviderImpl     | YaLin             | 1       | 1     | 1       | 1   | 35
