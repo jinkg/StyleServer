@@ -10,9 +10,10 @@ import java.util.List;
  */
 public class HttpRequestBody {
 
+  private static final String TEMP = "tlnvIvAs/7luZBW3mEM2GLkbE7k=";
   public static final List<String> VALID_FACET_ID_LIST = new ArrayList<>(
       Arrays.asList("eY2qu+zyliX8ptVNGmVW81e+tzU=", "0C73mPNvXJ5tL99+xMM62U0Ii5I=",
-          "lAGA4yVl9Tth8P92Wqe5OTPZq2Y=", "Q8Rxz9rnYVh+skIvPJ2kRot/0eQ="));
+          "lAGA4yVl9Tth8P92Wqe5OTPZq2Y=", "Q8Rxz9rnYVh+skIvPJ2kRot/0eQ=", TEMP));
 
   private DeviceInfo deviceInfo;
   private String facetId;
