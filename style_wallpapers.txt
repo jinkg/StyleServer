@@ -1,4 +1,16 @@
 file name                               | wallpaper name                        | author & date             | pro       | tag
+in-mood-2005.jpg                        |In Mood                                         |黄永玉, 2005                              | 0       | kinglloy.com
+rose-de-ouarzazate-1991.jpg             |Rose de Ouarzazate                              |Olivier Debre, 1991                             | 0       | kinglloy.com
+couleur-lumi-re-1993-1.jpg              |Couleur lumiure                                 |Rossi, 1993-Horacio Garcia                      | 0       | kinglloy.com
+balchik-coast.jpg                       |Balchik Coast                                   |Medi Wechsler Dinu                              | 0       | kinglloy.com
+viewing-fish-at-flower-harbour-1977.jpg |Viewing Fish at Flower Harbour                  |Wu Guanzhong, 1977                              | 0       | kinglloy.com
+lotus-1.jpg                             |莲花                                            |黄永玉                                    | 0       | kinglloy.com
+cat-and-mouse.jpg                       |猫和老鼠                                        |黄永玉                                    | 0       | kinglloy.com
+egret.jpg                               |白鹭                                            |林风眠                                    | 0       | kinglloy.com
+1-07-2001-2001.jpg                      |1-07-2001                                       |赵无极, 2001                                | 0       | kinglloy.com
+making-music-2000.jpg                   |Making Music                                    |Helen Frankenthaler, 2000                       | 0       | kinglloy.com
+fencing-at-munich-olympics-1972.jpg     |Fencing at Munich Olympics                      |LeRoy Neiman, 1972                              | 0       | kinglloy.com
+les-grands-respirants.jpg               |LES GRANDS RESPIRANTS                           |Jean Messagier                                  | 0       | kinglloy.com
 series-i-no-3.jpg                       | Series I, No. 3                       | Georgia O'Keeffe, 1918    | 0       | kinglloy.com
 blue-02.jpg                             | Blue-02                               | Georgia O'Keeffe, 1916    | 0       | kinglloy.com
 bleeding-heart.jpg                      | Bleeding Heart                        | Georgia O'Keeffe, 1932    | 0       | kinglloy.com
