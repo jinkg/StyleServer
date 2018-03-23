@@ -70,5 +70,5 @@ Christmas        | christmas.component           | christmas.jpg     | com.kingl
 地球3D HD        | earth3d_hd.component          | earth3d_hd.jpg     | com.kinglloy.wallpaper.earth_3d.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 35
 春天             | nature_live_spring01.component   | nature_live_spring01.jpg   | com.kinglloy.wallpaper.nature3d.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 35
 春天             | nl_spring02.component          | nl_spring02.jpg   | com.kinglloy.spring3d_02.wallpaper.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 35
-春天             | nl_spring03.component          | nl_spring03.jpg   | com.kinglloy.spring3d_02.wallpaper.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 35
+
 
