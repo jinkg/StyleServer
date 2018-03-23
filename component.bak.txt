@@ -61,3 +61,5 @@ Dandelion       | dandelion01.component         | dandelion01.jpg   | com.yalin.
 Tunnel          | tunnel3d01.component          | tunnel3d01.jpg    | com.yalin.wallpaper.tunnel3d01.ProviderImpl       | Next              | 1      | 1     | 0.5      | 1   | 30
 初音             | miku.component                 | miku.jpg          | com.yalin.wallpaper.miku.ProviderImpl       | YaLin                  | 1      | 1     | 0       | 0   | 25
 Pond             | koi_pond.component            | koi_pond.jpg          | com.yalin.wallpaper.koipond.ProviderImpl       | YaLin           | 1       | 1     | 1       | 1   | 30
+
+春天             | nl_spring01.component   | nature_live_spring01.jpg   | com.kinglloy.wallpaper.nature3d.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 35
