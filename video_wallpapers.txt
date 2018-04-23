@@ -9,7 +9,6 @@ Windows                 | windows.mp4             | windows.jpg              | Y
 MiKu                    | miku01.mp4             | miku01.jpg                | YaLin                     | 1         | kinglloy.com
 李白                    | libai.mp4             | libai.jpg                   | YaLin                     | 0         | kinglloy.com
 雅研                    | yayan.mp4             | yayan.jpg                   | YaLin                     | 0         | kinglloy.com
-萌                      | meng01.mp4            | meng01.jpg                  | YaLin                     | 1         | kinglloy.com
 Girl                    | girl02.mp4            | girl02.jpg                  | YaLin                     | 1         | kinglloy.com
 MiKu                    | miku02.mp4            | miku02.jpg                  | YaLin                     | 0         | kinglloy.com
 博丽灵梦                 | reimu01.mp4            | reimu01.jpg                | YaLin                     | 0         | kinglloy.com
