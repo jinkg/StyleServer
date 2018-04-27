@@ -72,5 +72,8 @@ Christmas        | christmas.component           | christmas.jpg     | com.kingl
 春天             | nl_spring02.component          | nl_spring02.jpg   | com.kinglloy.spring3d_02.wallpaper.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 42
 春天             | nl_spring02.component          | nl_spring03.jpg   | com.kinglloy.spring3d_03.wallpaper.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 42
 Mars3D           | mars.components                | mars3d.jpg       | com.kinglloy.wallpaper.mars_3d_pro.ProviderImpl    | YaLin             | 1       | 1     | 1       | 1   | 42
+Rose            | rose_3d.component                | rose3d_1.jpg       | com.kinglloy.wallpaper.rose3d_1.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
+Rose            | rose_3d.component                | rose3d_2.jpg       | com.kinglloy.wallpaper.rose3d_2.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
+Rose            | rose_3d.component                | rose3d_3.jpg       | com.kinglloy.wallpaper.rose3d_3.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 
 
