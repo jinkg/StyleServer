@@ -75,5 +75,8 @@ Mars3D           | mars.components                | mars3d.jpg       | com.kingl
 Rose            | rose_3d.component                | rose3d_1.jpg       | com.kinglloy.wallpaper.rose3d_1.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 Rose            | rose_3d.component                | rose3d_2.jpg       | com.kinglloy.wallpaper.rose3d_2.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 Rose            | rose_3d.component                | rose3d_3.jpg       | com.kinglloy.wallpaper.rose3d_3.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
+Galaxy          | galaxy_pack.component            | galaxy_19.jpg     | com.kinglloy.wallpaper.galaxy_19.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
+Galaxy          | galaxy_pack.component            | galaxy_21.jpg     | com.kinglloy.wallpaper.galaxy_21.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
+Galaxy          | galaxy_pack.component            | galaxy_23.jpg     | com.kinglloy.wallpaper.galaxy_23.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 
 
