@@ -82,5 +82,6 @@ Deep Blue       | galaxy_pack_full.component       | galaxy_18.jpg     | com.kin
 American Car    | car.component                    | car1.jpg           | com.kinglloy.wallpaper.car.car01.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 Luxury SUV      | car.component                    | car2.jpg           | com.kinglloy.wallpaper.car.car02.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 Japanese Car    | car.component                    | car3.jpg           | com.kinglloy.wallpaper.car.car03.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
+Chrooma         | chrooma.component                | chrooma.jpg         | com.kinglloy.wallpaper.chrooma.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 
 
