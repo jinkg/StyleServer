@@ -83,5 +83,5 @@ American Car    | car.component                    | car1.jpg           | com.ki
 Luxury SUV      | car.component                    | car2.jpg           | com.kinglloy.wallpaper.car.car02.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 Japanese Car    | car.component                    | car3.jpg           | com.kinglloy.wallpaper.car.car03.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 42
 Chrooma         | chrooma.component                | chrooma.jpg         | com.kinglloy.wallpaper.chrooma.ProviderImpl      | YaLin             | 1       | 1     | 1       | 1   | 54
-Pond             | koi_pond_new2.component         | koi_pond_2.jpg     | com.kinglloy.wallpaper.koipond.ProviderImpl        | YaLin             | 1       | 1     | 1       | 1   | 42
+Pond             | koi_pond_new_2.component         | koi_pond_2.jpg     | com.kinglloy.wallpaper.koipond.ProviderImpl        | YaLin             | 1       | 1     | 1       | 1   | 42
 
